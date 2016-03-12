@@ -66,7 +66,7 @@ gulp.task('imgmin', function () {
 gulp.task('jade', function () {
   return gulp.src('./*.jade')
     .pipe(jade())
-    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest('./'))
     .pipe(livereload({start:true}));
 });
 
