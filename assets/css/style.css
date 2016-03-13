@@ -59,6 +59,10 @@
   font-family: var(--sans);
 }
 
+body {
+  background-color: var(--mainbgcolor);
+}
+
 .top_offset_5 {
   margin-top: 5px;
 }
@@ -100,16 +104,13 @@ a {
     }
   }
 }
-.t_corn {
+h1 {
   font-size: 26pt;
   text-transform: uppercase;
 }
 
 .main_page {
-  height: 800px;
-  background-color: var(--mainbgcolor);
   color: var(--maintxtcolor);
-  margin-top: 5px;
   padding-top: 90px;
 }
 .order_list {
