@@ -23,13 +23,25 @@ html(lang="en")
             p.phone +7&nbsp;(383)&nbsp;303&nbsp;45&nbsp;50
             a.order_button(href="#") Заказать&nbsp;обратный&nbsp;звонок
       .row.header_bottom             
-    .row.main_page
-      .col-xs
-        .col-xs.row.center-xs
-          h1 Корзина
-        .col-xs.row.order_list
-          .col-md.row.order_header
-            p Ваш заказ
+    .main_page
+      .row.center-xs
+        h1 Корзина
+      .row.order_list
+        h3 Ваш заказ
+        ul.order
+          li.row 
+            .col-xs
+              span.icon_cup
+              span.inf
+                h4 Стакан 150мл, белый
+                br
+                p Изготовлен из ламенированного картона полностью 210г/м2 
+          li.row
+            .col-xs
+              .amount
+                h4 Количество
+              .price 
+                p4 Стоимость
     footer
       .row.footer_content      
          
