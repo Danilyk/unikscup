@@ -1,6 +1,7 @@
 doctype html
 html(lang="en")
   head
+    meta(charset='utf-8')
     link(rel="stylesheet" href="dist/flexboxgrid.min.css" type="text/css")
     link(rel="stylesheet" href="dist/style.css" type="text/css")
     link(href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
@@ -21,7 +22,16 @@ html(lang="en")
           .col-xs      
             p.phone +7 (383) 303 45 50
             a.order_button(href="#") Заказать обратный звонок
-      .row.header_bottom
-            
-          
+    .row.header_bottom             
+    .row.main_page
+      .col-xs
+        .col-xs.row.center-xs.t_corn
+          p Корзина
+        .col-xs.row.order_list
+          .col-md.row.order_header
+            p Ваш заказ
+          .col-md.price
+            p 1488 P
+    footer
+      .row.footer_content      
          
