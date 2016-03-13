@@ -6,7 +6,7 @@
 
 
 :root {
-  --border: 1px solid;
+  --border: 2px solid;
   --white: #fff;
   --black: #000;
 
@@ -16,7 +16,8 @@
   --lightgreen: #7EC955;
   --mainbgcolor: #F4F8FB;
   --headerbgcolor: #FAFAFA;
-  --navtxtcolor: #dbdbdb;
+
+  --navtxtcolor: #acacae;
   --headershadow: 0 3px 3px #b7b7b7;
   --orderlistshadow:0 1px 3px #59595D;
   --maintxtcolor: #59595D;
@@ -33,7 +34,7 @@
   font-weight: bold;
   color: var(--white);
   border-radius: 21px;
-  padding: 8px 15px;
+  padding: 6px 13px;
   text-decoration: none;
   border: var(--border);
   border-color: var(--orange);
@@ -53,6 +54,26 @@
   @mixin order_button;
   display: inline-block;
   text-transform: uppercase;
+}
+
+.button_checkout {
+  display: block;
+  background: var(--lightgreen);
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 8px 21px;
+  color: var(--white);
+  border-radius: 5px;
+  border: 2px solid var(--lightgreen);
+
+  &:hover {
+    color: var(--lightgreen);
+    background-color: var(--white);
+  }
+
+  &:focus {
+    box-shadow: inset 2px 2px 2px #bbb;
+  }
 }
 
 * {
@@ -80,30 +101,69 @@ a {
   color: inherit;
 }
 
-.header_top {
-  box-shadow: var(--headershadow);
-  background-color: var(--headerbgcolor);
-  padding: 0 45px;
-  align-items: center;
-  height: 70px;
+@media (--desktop) {
+  header {
+    width: 900px;
+  }
+}
 
-  a.logo {
-    display: block;
-    text-indent: -9999px;
-    background: url('../img/logo.png') center center no-repeat;
-    width: 160px;
-    height: 36px;
+header {
+  background-color: var(--headerbgcolor);
+
+  .header_top {
+    box-shadow: var(--headershadow);
+    padding: 0 45px;
+    align-items: center;
+    height: 70px;
+
+    a.logo {
+      display: block;
+      text-indent: -9999px;
+      background: url('../img/logo.png') center center no-repeat;
+      width: 160px;
+      height: 36px;
+    }
+
+    .contacts {
+      margin-right: 10px;
+    }
+
+    p {
+      font-size: 10px;
+
+      &.phone {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
   }
 
-  p {
-    font-size: 10px;
+  .header_bottom {
+    height: 50px;
 
-    &.phone {
-      font-size: 18px;
-      font-weight: bold;
+    ul.nav {
+      list-style: none;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        color: var(--navtxtcolor);
+
+        a {
+          display: block;
+          padding: 14px 20px;
+          transition: color 0.2s;
+          font-weight: normal;
+
+          &:hover {
+            color: var(--black);
+          }
+        }
+      }
     }
   }
 }
+
 h1 {
   font-size: 26px;
   text-transform: uppercase;
@@ -133,5 +193,15 @@ h1 {
   p {
     color: var(--pricecolor);
     text-align: right;
+  }
+}
+/* -- Icons -- */
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+
+  &.icon_cart {
+    background: url('../img/cart.png') center center no-repeat;
   }
 }
