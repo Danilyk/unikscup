@@ -18,6 +18,9 @@
   --headerbgcolor: #FAFAFA;
   --navtxtcolor: #dbdbdb;
   --headershadow: 0 3px 3px #b7b7b7;
+  --orderlistshadow:0 1px 3px #59595D;
+  --maintxtcolor: #59595D;
+  --pricecolor: #5DAAA4;
 
   --sans: 'Open Sans', sans-serif;
 }
@@ -48,6 +51,7 @@
 
 .order_button {
   @mixin order_button;
+  display: inline-block;
   text-transform: uppercase;
 }
 
@@ -73,7 +77,6 @@ a {
 }
 
 .header_top {
-
   box-shadow: var(--headershadow);
   background-color: var(--headerbgcolor);
   padding: 0 45px;
@@ -95,5 +98,39 @@ a {
       font-size: 18pt;
       font-weight: bold;
     }
+  }
+}
+.t_corn {
+  font-size: 26pt;
+  text-transform: uppercase;
+}
+
+.main_page {
+  height: 800px;
+  background-color: var(--mainbgcolor);
+  color: var(--maintxtcolor);
+  margin-top: 5px;
+  padding-top: 90px;
+}
+.order_list {
+  box-shadow: var(--orderlistshadow);
+  margin-top: 45px;
+  margin: 45px auto 70px auto;
+  width: 545px;
+  height: 560px;
+  background-color: var(--white);
+}
+.order_header {
+  p {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+}
+.price {
+  justify-content: flex-end;
+  p {
+    color: var(--pricecolor);
+    text-align: right;
   }
 }
