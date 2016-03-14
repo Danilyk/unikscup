@@ -41,7 +41,7 @@
   text-decoration: none;
   border: var(--border);
   border-color: var(--orange);
-  transition: color 0.2s;
+  transition: color 0.3s;
 
   &:hover {
     color: var(--orange);
@@ -305,6 +305,7 @@ a.cross {
     background: url('../img/cart.png') center center no-repeat;
   }
 }
+<<<<<<< Updated upstream
 
 .icon-cup{
   display: inline-block;
@@ -313,3 +314,5 @@ a.cross {
   @mixin icon-cup;
   background-position: 4px 0;
 }
+=======
+>>>>>>> Stashed changes
