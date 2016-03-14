@@ -133,6 +133,10 @@ header {
     align-items: center;
     height: 70px;
 
+    .row {
+      height: 70px;
+    }
+
     a.logo {
       display: block;
       text-indent: -9999px;

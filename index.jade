@@ -10,36 +10,40 @@ html(lang="en")
     
   body 
     header
-      .row.header-top
-        .col-xs-3
-          a.logo(href="#") Unikscup
-        .col-xs-9.row.middle-xs.end-xs
-          .contacts.text-right
-            p г.Новосибирск
-            p ул.Приграничная
-            p.top-offset-5
-              a(href="mailto:info@unikscup.ru") info@unikscup.ru
-          .center-xs      
-            p.phone +7&nbsp;(383)&nbsp;303&nbsp;45&nbsp;50
-            a.order-button(href="#") Заказать&nbsp;обратный&nbsp;звонок
-      .row.header-bottom
-        ul.nav.col-xs-8.middle-xs
-          li
-            a(href="#") Главная
-          li
-            a(href="#") Продукция
-          li
-            a(href="#") Сотрудничество
-          li
-            a(href="#") О компании
-          li
-            a(href="#") Контакты   
-        .row.col-xs-4.end-xs.middle-xs
-          a.col-xs.row.middle-xs(href="#")
-            span.icon.icon-cart
-            span В корзине 2 товара
-          .row.col-xs
-            a.button-checkout(href="#") оформить заказ            
+      .header-top
+        .container
+          .row.middle-xs
+            .col-xs-3
+              a.logo(href="#") Unikscup
+            .col-xs-9.row.middle-xs.end-xs
+              .contacts.text-right
+                p г.Новосибирск
+                p ул.Приграничная
+                p.top-offset-5
+                  a(href="mailto:info@unikscup.ru") info@unikscup.ru
+              .center-xs      
+                p.phone +7&nbsp;(383)&nbsp;303&nbsp;45&nbsp;50
+                a.order-button(href="#") Заказать&nbsp;обратный&nbsp;звонок
+      .header-bottom
+        .container
+          .row
+            ul.nav.col-xs-8.middle-xs
+              li
+                a(href="#") Главная
+              li
+                a(href="#") Продукция
+              li
+                a(href="#") Сотрудничество
+              li
+                a(href="#") О компании
+              li
+                a(href="#") Контакты   
+            .row.col-xs-4.end-xs.middle-xs
+              a.col-xs.row.middle-xs(href="#")
+                span.icon.icon-cart
+                span В корзине 2 товара
+              .row.col-xs
+                a.button-checkout(href="#") оформить заказ            
     .container.basket
       .row.center-xs
         h1 Корзина
