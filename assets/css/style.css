@@ -17,6 +17,7 @@
   --mainbgcolor: #F4F8FB;
   --headerbgcolor: #FAFAFA;
   --footerbgcolor: #2F3034;
+  --footerheadercolor: #59595D;
 
   --navtxtcolor: #acacae;
   --headershadow: 0 3px 3px #b7b7b7;
@@ -185,6 +186,33 @@ header {
 footer {
   height: 190px;
   background-color: var(--footerbgcolor);
+  font-size: 12px;
+  color: var(--navtxtcolor);
+
+  .container {
+    height: 100%;
+
+    .row {
+      height: 100%;
+    }
+  }
+
+  h4 {
+    color: var(--footerheadercolor);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+    li {
+      color: var(--navtxtcolor);
+      margin: 7px 0;
+    }
+  }
 }
 
 h1 {
