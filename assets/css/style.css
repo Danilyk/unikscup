@@ -133,10 +133,6 @@ header {
     align-items: center;
     height: 70px;
 
-    .row {
-      height: 70px;
-    }
-
     a.logo {
       display: block;
       text-indent: -9999px;
@@ -231,18 +227,21 @@ h1 {
   box-shadow: var(--orderlistshadow);
   margin-top: 45px;
   margin: 45px auto 70px auto;
-  max-width: 80%;
+  padding: 0 25px;
+  max-width: 550px;
+  width: 80%;
   background-color: var(--white);
 
   ul.order {
     width: 100%;
-    margin: 0 25px;
-    padding: 0;
+    margin: 0 0 10px 0;
+    padding: 10px 0;
     list-style-type: none;
     border-top: 1px solid var(--borderordercolor);
     border-bottom: 1px solid var(--borderordercolor);
 
     h4 {
+      font-size: 12px;
       display: inline-block;
     }
   }
@@ -250,10 +249,21 @@ h1 {
 
 .info {
   margin-left: 15px;
-  max-width: 250px;
+  max-width: 165px;
 
   p {
-    font-size: 14px;
+    font-size: 10px;
+  }
+}
+
+.amount-block,
+.cost-block {
+  margin: 0 5px;
+  p {
+    font-size: 9px;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 5px;
+    margin-right: 10px;
   }
 }
 
@@ -262,6 +272,28 @@ h1 {
   border: var(--border) #C7CCD0;
   border-radius: 18px;
   font-size: 16px;
+}
+
+.total-cost {
+  color: var(--pricecolor);
+  padding: 5px 28px;
+  border: var(--border) #c7ccd0;
+  border-radius: 18px;
+  font-size: 16px;
+}
+
+.cross-block {
+  margin-left: 5px;
+}
+
+a.cross {
+  padding: 10px 10px;
+  display: block;
+  background: url('../img/cross.png') center center no-repeat;
+  width: 10px;
+  height: 10px;
+  border: var(--border) #A9AAAF;
+  border-radius: 35px;
 }
 /* -- Icons -- */
 .icon {

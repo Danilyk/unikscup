@@ -52,16 +52,36 @@ html(lang="en")
           h3 Ваш заказ
         ul.order
           li.row
-            .col-xs.row.middle-xs
+            .col-xs.row.middle-xs.center-xs
               span.icon-cup
               span.info
                 h4 Стакан 150мл, белый
                 p Изготовлен из ламинированного картона плотностью 210 г/м2
-            .col-xs
-              p Количество
-              span.amount 1000
-              p Стоимость
-              span.total-cost 1320
+            .col-xs.row.middle-xs
+              .amount-block
+                p Количество
+                span.amount 1000
+              .cost-block  
+                p Стоимость
+                span.total-cost 1320
+              .cross-block
+                a.cross(href="#") 
+
+          li.row
+            .col-xs.row.middle-xs.center-xs
+              span.icon-cup
+              span.info
+                h4 Стакан 250мл, белый
+                p Изготовлен из ламинированного картона плотностью 270 г/м2
+            .col-xs.row.middle-xs
+              .amount-block
+                p Количество
+                span.amount 1000
+              .cost-block  
+                p Стоимость
+                span.total-cost 1320
+              .cross-block
+                a.cross(href="#")  
     footer
       .container
         .row.footer-content.start-xs
