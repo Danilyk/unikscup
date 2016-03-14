@@ -16,6 +16,7 @@
   --lightgreen: #7EC955;
   --mainbgcolor: #F4F8FB;
   --headerbgcolor: #FAFAFA;
+  --footerbgcolor: #2F3034;
 
   --navtxtcolor: #acacae;
   --headershadow: 0 3px 3px #b7b7b7;
@@ -88,6 +89,7 @@
 
 body {
   background-color: var(--mainbgcolor);
+  padding-top: 120px;
 }
 
 h1, h2, h3 {
@@ -117,6 +119,10 @@ a {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: var(--headerbgcolor);
 
   .header_top {
@@ -176,14 +182,19 @@ header {
   }
 }
 
+footer {
+  height: 190px;
+  background-color: var(--footerbgcolor);
+}
+
 h1 {
+  margin-top: 90px;
   font-size: 26px;
   text-transform: uppercase;
 }
 
 .container {
   color: var(--maintxtcolor);
-  padding-top: 90px;
 }
 
 .order_list {
