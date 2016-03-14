@@ -10,19 +10,19 @@ html(lang="en")
     
   body 
     header
-      .row.header_top
+      .row.header-top
         .col-xs-3
           a.logo(href="#") Unikscup
         .col-xs-9.row.middle-xs.end-xs
           .contacts.text-right
             p г.Новосибирск
             p ул.Приграничная
-            p.top_offset_5
+            p.top-offset-5
               a(href="mailto:info@unikscup.ru") info@unikscup.ru
           .center-xs      
             p.phone +7&nbsp;(383)&nbsp;303&nbsp;45&nbsp;50
-            a.order_button(href="#") Заказать&nbsp;обратный&nbsp;звонок
-      .row.header_bottom
+            a.order-button(href="#") Заказать&nbsp;обратный&nbsp;звонок
+      .row.header-bottom
         ul.nav.col-xs-8.middle-xs
           li
             a(href="#") Главная
@@ -36,29 +36,31 @@ html(lang="en")
             a(href="#") Контакты   
         .row.col-xs-4.end-xs.middle-xs
           a.col-xs.row.middle-xs(href="#")
-            span.icon.icon_cart
+            span.icon.icon-cart
             span В корзине 2 товара
           .row.col-xs
-            a.button_checkout(href="#") оформить заказ            
+            a.button-checkout(href="#") оформить заказ            
     .container.basket
       .row.center-xs
         h1 Корзина
-      .row.order_list
+      .row.order-list
         .col-xs-offset-1
           h3 Ваш заказ
         ul.order
           li.row
-            .col-xs-offset-1.row.middle-xs
-              span.icon_cup
+            .col-xs.row.middle-xs
+              span.icon-cup
               span.info
                 h4 Стакан 150мл, белый
                 p Изготовлен из ламинированного картона плотностью 210 г/м2
             .col-xs
+              p Количество
               span.amount 1000
-              span.cost 1320
+              p Стоимость
+              span.total-cost 1320
     footer
       .container
-        .row.footer_content.start-xs
+        .row.footer-content.start-xs
           .col-xs
             h4 Разделы
             ul
