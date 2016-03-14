@@ -18,6 +18,7 @@
   --headerbgcolor: #FAFAFA;
   --footerbgcolor: #2F3034;
   --footerheadercolor: #59595D;
+  --borderordercolor: #d6d6d6;
 
   --navtxtcolor: #acacae;
   --headershadow: 0 3px 3px #b7b7b7;
@@ -130,10 +131,7 @@ header {
     box-shadow: var(--headershadow);
     padding: 0 45px;
     align-items: center;
-
-    .row {
-      height: 70px;
-    }
+    height: 70px;
 
     a.logo {
       display: block;
@@ -234,10 +232,11 @@ h1 {
 
   ul.order {
     width: 100%;
-    margin: 0;
+    margin: 0 25px;
     padding: 0;
-    display: block;
     list-style-type: none;
+    border-top: 1px solid var(--borderordercolor);
+    border-bottom: 1px solid var(--borderordercolor);
 
     h4 {
       display: inline-block;
@@ -246,7 +245,8 @@ h1 {
 }
 
 .info {
-  max-width: 150px;
+  margin-left: 15px;
+  max-width: 250px;
 }
 
 /* -- Icons -- */
