@@ -53,7 +53,7 @@
 @define-mixin icon_cup {
   background: url('../img/cupboard2.png');
   background-repeat: no-repeat;
-
+  height: 55px;
 }
 
 .order_button {
@@ -181,35 +181,35 @@ h1 {
   text-transform: uppercase;
 }
 
-.main_page {
+.container {
   color: var(--maintxtcolor);
   padding-top: 90px;
 }
+
 .order_list {
   box-shadow: var(--orderlistshadow);
   margin-top: 45px;
   margin: 45px auto 70px auto;
-  max-width: 745px;
+  max-width: 80%;
   background-color: var(--white);
-}
-.order_header p{
-  text-transform: uppercase;
-  font-weight: bold;
+
+  ul.order {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: none;
+
+    h4 {
+      display: inline-block;
+    }
+  }
 }
 
-ul.order {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: block;
-  list-style-type: none;
+.info {
+  max-width: 150px;
 }
-.icon_cup{
-  width: 100px;
-  height: 55px;
-  @mixin icon_cup;
-  background-position: 55px 0;
-}
+
 /* -- Icons -- */
 .icon {
   display: inline-block;
@@ -219,4 +219,12 @@ ul.order {
   &.icon_cart {
     background: url('../img/cart.png') center center no-repeat;
   }
+}
+
+.icon_cup{
+  display: inline-block;
+  width: 40px;
+  height: 55px;
+  @mixin icon_cup;
+  background-position: 4px 0;
 }
