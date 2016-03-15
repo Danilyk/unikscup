@@ -233,16 +233,21 @@ h1 {
   width: 80%;
   background-color: var(--white);
 
+  h3{
+    margin: 35px 0 12px 0;
+  }
 
-  ul.order {
+  .order {
     width: 100%;
     list-style-type: none;
     border-top: 1px solid var(--borderordercolor);
+    margin-top: 0;
 
     li {
       border-bottom: 1px solid var(--borderordercolor);
       padding: 5px 5px 10px 5px;
     }
+
     h4 {
       font-size: 12px;
       display: inline-block;
@@ -263,29 +268,30 @@ h1 {
 
 .amount-block,
 .cost-block {
-  margin: 0 5px;
+  /*margin: 0 5px;*/
   p {
     font-size: 9px;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     padding: 0 0 5px 5px;
     margin-right: 10px;
   }
 }
 
 .amount {
-  padding: 5px 28px;
+  padding: 1px 25px;
   border: var(--border) #C7CCD0;
   border-radius: 18px;
   font-size: 16px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .cost {
   color: var(--pricecolor);
-  padding: 5px 28px;
+  padding: 1px 25px;
   border: var(--border) #c7ccd0;
   border-radius: 18px;
   font-size: 16px;
+  font-weight: bold;
 }
 .total-cost {
   color: var(--pricecolor);
