@@ -48,28 +48,34 @@ html(lang="en")
       .row.center-xs
         h1 Корзина
       .row.order-list
-        .col-xs-offset-1
+        .col-xs
           h3 Ваш заказ
+        .col-xs.end-xs
+          h3.total-cost 12820р    
         ul.order
           li.row
-            .col-xs.row.middle-xs.center-xs
-              span.icon-cup
+            .col-xs.row.middle-xs.start-xs
+              span.icon-cup150
               span.info
                 h4 Стакан 150мл, белый
                 p Изготовлен из ламинированного картона плотностью 210 г/м2
             .col-xs.row.middle-xs
               .amount-block
                 p Количество
-                span.amount 1000
+                .minus-pic
+                  a.minus-link(href="#")
+                span.amount 1100
+                .plus-pic
+                  a.plus-link(href="#")
               .cost-block  
                 p Стоимость
-                span.total-cost 1320
+                span.cost 1320
               .cross-block
                 a.cross(href="#") 
 
           li.row
-            .col-xs.row.middle-xs.center-xs
-              span.icon-cup
+            .col-xs.row.middle-xs.start-xs
+              span.icon-cup250
               span.info
                 h4 Стакан 250мл, белый
                 p Изготовлен из ламинированного картона плотностью 270 г/м2
@@ -79,9 +85,71 @@ html(lang="en")
                 span.amount 1000
               .cost-block  
                 p Стоимость
-                span.total-cost 1320
+                span.cost 1320
               .cross-block
-                a.cross(href="#")  
+                a.cross(href="#") 
+          li.row
+            .col-xs.row.middle-xs.start-xs
+              span.icon-cup350
+              span.info
+                h4 Стакан 350мл, белый
+                p Изготовлен из ламинированного картона плотностью 300 г/м2
+            .col-xs.row.middle-xs
+              .amount-block
+                p Количество
+                span.amount 1000
+              .cost-block  
+                p Стоимость
+                span.cost 1320
+              .cross-block
+                a.cross(href="#")
+          li.row
+            .col-xs.row.middle-xs.start-xs
+              span.icon-cup450
+              span.info
+                h4 Стакан 450мл, белый
+                p Изготовлен из ламинированного картона плотностью 320 г/м2
+            .col-xs.row.middle-xs
+              .amount-block
+                p Количество
+                span.amount 1000
+              .cost-block  
+                p Стоимость
+                span.cost 1320
+              .cross-block
+                a.cross(href="#")
+          li.row
+            .col-xs.row.middle-xs.start-xs
+              span.icon-cup80
+              span.info
+                h4 Крышка для бумажного стакана 80мм.
+                p Подходит для стаканов 250мл.
+            .col-xs.row.middle-xs
+              .amount-block
+                p Количество
+                span.amount 1000
+              .cost-block  
+                p Стоимость
+                span.cost 1320
+              .cross-block
+                a.cross(href="#")
+          li.row
+            .col-xs.row.middle-xs.start-xs
+              span.icon-cup90
+              span.info
+                h4 Крышка для бумажного стакана 90мм.
+                p Подходит для стаканов 350 и 450мл.
+            .col-xs.row.middle-xs
+              .amount-block
+                p Количество
+                span.amount 1000
+              .cost-block  
+                p Стоимость
+                span.cost 1320
+              .cross-block
+                a.cross(href="#")                                        
+        .col-xs.end-xs
+          a.order-button.orange Оформить заказ      
     footer
       .container
         .row.footer-content.start-xs
