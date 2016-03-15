@@ -305,7 +305,6 @@ a.cross {
     background: url('../img/cart.png') center center no-repeat;
   }
 }
-<<<<<<< Updated upstream
 
 .icon-cup{
   display: inline-block;
@@ -314,5 +313,3 @@ a.cross {
   @mixin icon-cup;
   background-position: 4px 0;
 }
-=======
->>>>>>> Stashed changes
