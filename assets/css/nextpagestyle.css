@@ -1,0 +1,27 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import "style.css";
+.bgimage {
+  display: block;
+  background: url('../img/bgpage.png') center center no-repeat;
+  width: 1170px;
+  height: 500px;
+}
+body {
+  /*padding-top: 0;*/
+}
+
+.bgimage {
+      color: var(--white);
+
+  h1 {
+    margin: 0 0;
+    font-size: 72px;
+    padding-top: 140px;
+    margin-bottom: 35px;
+  }
+
+  p {
+    font-size: 40px;
+    font-weight: lighter;
+  }
+}
