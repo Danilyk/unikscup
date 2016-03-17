@@ -131,6 +131,7 @@ header {
   left: 0;
   right: 0;
   background-color: var(--headerbgcolor);
+  z-index: 999;
 
   .header-top {
     box-shadow: var(--headershadow);
@@ -403,3 +404,4 @@ left: -20px;
   @mixin icon-cup;
   background-position: -295px 0;
 }
+@import 'order.css';
