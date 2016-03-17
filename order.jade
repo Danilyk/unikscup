@@ -50,12 +50,15 @@ html(lang="en")
       .row
         .col-xs.order-list
           .order-progress-bar.row.between-xs
-            .order-progress-circle.step-1.done.center-xs
-              p.step-description Заказчик
-            .order-progress-circle.step-2.active.center-xs
-              p.step-description Доставка
-            .order-progress-circle.step-3.center-xs
-              p.step-description Заказ
+            .col-xs.left.done.step-1
+              .order-progress-circle.center-xs  
+                p.step-description Заказчик
+            .col-xs.middle.done.step-2    
+              .order-progress-circle.center-xs
+                p.step-description Доставка
+            .col-xs.right.active.step-3    
+              .order-progress-circle.center-xs
+                p.step-description Заказ
               
           h3 Компания    
         .col-xs  

@@ -25,3 +25,13 @@ body {
     font-weight: lighter;
   }
 }
+
+.howwedoit {
+  background-color: var(--white);
+  width: 930px;
+  position: relative;
+  margin: -35px auto 0 auto;
+  min-height:1100px; 
+
+
+}
