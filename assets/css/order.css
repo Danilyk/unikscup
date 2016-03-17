@@ -5,6 +5,96 @@
  		height: 90px;
  		min-width: 300px;
 
+    .col-xs {
+      padding: 0;
+
+      &.active {
+        &.step-1,
+        &.step-2,
+        &.step-3 {
+          .order-progress-circle {
+            border-color: var(--pricecolor);
+     				color: var(--pricecolor);
+     			}
+        }
+ 			}
+
+ 			&.done {
+        &.step-1,
+        &.step-2,
+        &.step-3 {
+          .order-progress-circle {
+             border-color: var(--pricecolor);
+             background-color: var(--pricecolor);
+             color: var(--white);
+         }
+
+         &:after {
+           background-color: var(--pricecolor);
+         }
+        }
+      }
+
+      &.step-2 .order-progress-circle{
+ 				align-self: center;
+ 			}
+
+ 			&.step-3 .order-progress-circle{
+ 				align-self: flex-end;
+
+ 				.step-description {
+ 					left: -6px;
+ 				}
+ 			}
+
+ 			& .order-progress-circle:after {
+ 				font-size: 13px;
+ 				font-weight: bold;
+ 				display: block;
+ 				padding-top: 3px;
+ 			}
+
+ 			&.step-1 .order-progress-circle:after {
+ 				content: "1";
+ 			}
+
+ 			&.step-2 .order-progress-circle:after {
+ 				content: "2";
+ 			}
+
+ 			&.step-3 .order-progress-circle:after {
+ 				content: "3";
+ 			}
+    }
+
+    .col-xs.middle {
+      &:after {
+        margin-top: -16px;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #dbdbdb;
+        z-index: 1;
+      }
+    }
+
+    .col-xs.left {
+      &:after {
+        margin-top: -16px;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #dbdbdb;
+        z-index: 1;
+      }
+    }
+
+    .col-xs.right {
+      max-width: 32px;
+    }
+
  		.order-progress-circle {
  			position: relative;
  			z-index: 10;
@@ -15,60 +105,6 @@
  			border: 4px solid transparent;
  			background-color: var(--headerbgcolor);
  			box-shadow: 0 2px 2px #777;
-
- 			&.step-1 {
- 				&:after {
-		 			position: absolute;
-		 			display: block;
-		 			content: "";
-		 			width: 100%;
-		 			height: 4px;
-		 			background-color: #dbdbdb;
-		 			z-index: 1;
-		 		}
- 			}
-
- 			&.step-2 {
- 				align-self: center;
- 			}
-
- 			&.step-3 {
- 				align-self: flex-end;
-
- 				.step-description {
- 					left: -6px;
- 				}
- 			}
-
- 			&:after {
- 				font-size: 13px;
- 				font-weight: bold;
- 				display: block;
- 				padding-top: 3px;
- 			}
-
- 			&.step-1:after {
- 				content: "1";
- 			}
-
- 			&.step-2:after {
- 				content: "2";
- 			}
-
- 			&.step-3:after {
- 				content: "3";
- 			}
-
- 			&.active {
- 				border-color: var(--pricecolor);
- 				color: var(--pricecolor);
- 			}
-
- 			&.done {
- 				border-color: var(--pricecolor);
- 				background-color: var(--pricecolor);
- 				color: var(--white);	
- 			}
 
  			.step-description {
  				position: absolute;
