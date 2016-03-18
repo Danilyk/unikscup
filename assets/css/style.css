@@ -14,11 +14,13 @@
   --darkred: #e93d3a;
   --orange: #FF7323;
   --lightgreen: #7EC955;
+  --lightgrey: #d5d6d6;
   --mainbgcolor: #F4F8FB;
   --headerbgcolor: #FAFAFA;
   --footerbgcolor: #2F3034;
   --footerheadercolor: #59595D;
   --borderordercolor: #d6d6d6;
+
 
   --navtxtcolor: #acacae;
   --headershadow: 0 3px 3px #b7b7b7;
@@ -54,8 +56,14 @@
 }
 
 .grey-button {
-  display: block;
-  /*background-color:*/
+  display: inline-block;
+  background: var(--lightgrey);
+  font-family: var(--sans);
+  font-size: 12px;
+  padding: 8px 21px;
+  color: var(--white);
+  border-radius: 5px;
+  border: 2px solid var(--lightgrey);
 }
 
 @define-mixin icon-cup {
@@ -73,7 +81,6 @@
 
 .order-button {
   @mixin order-button;
-  display: inline-block;
   text-transform: uppercase;
 
   &.orange {
