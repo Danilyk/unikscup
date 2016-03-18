@@ -146,10 +146,6 @@
         p {
           color: #d9534f;
         }
-
-        input,textarea {
-          border-color: #d9534f;
-        }
       }
 
       input,textarea {
@@ -171,4 +167,45 @@
       }
     }
   }
- }
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + label:after {
+    content: "";
+    background-color: var(--pricecolor);
+    border-radius: 15px;
+    position: relative;
+    left: -25px;
+    top: -5px;
+
+
+}
+
+label{
+
+  &:before{
+    content: "";
+    display: inline-block;
+
+    width: 26px;
+    height: 26px;
+
+    position: relative;
+    background-color: var(--white);
+    border: var(--border) #dbdbdb;
+    border-radius: 15px;
+  }
+
+  &:after {
+    content: "";
+    display: inline-block;
+
+
+    width: 20px;
+    height: 20px;
+
+  }
+}

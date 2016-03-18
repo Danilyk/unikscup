@@ -66,7 +66,7 @@ html(lang="en")
                   p.step-description Заказ
                 
             form
-              .form-step.step-1.active
+              .form-step.step-1
                 h3 Компания
                 .form-control.error
                   p Название компании
@@ -84,7 +84,24 @@ html(lang="en")
                 .row.end-xs
                   .col-xs
                     a.button-checkout(href="#") Далее
-              .form-step.step-2
+              .form-step.step-2.active
+                h3 Способ доставки
+                .row
+                  .col-xs
+                    .form-control.delivery-buttons
+                      p Самовывоз
+                      input(id="pickup" type="radio" name="delivery" value="pickup")
+                      label(for="pickup")
+                  .col-xs
+                    .form-control
+                      p Доставка по Новосибирску
+                      input(id="courier" type="radio" name="delivery" value="pickup")    
+                      label(for="courier")
+                  .col-xs
+                    .form-control
+                      p Доставка до терминала ТК
+                      input(id="terminal" type="radio" name="delivery" value="pickup")
+                      label(for="terminal")
                 h3 Адрес доставки
                 .form-control 
                   p Город
@@ -112,9 +129,12 @@ html(lang="en")
                 .form-control 
                   p Примечания
                   textarea(type="text" placeholder="Кого спросить на вахте, есть ли шлагбаум на въезде на территорию и так далее...") 
-            .row.col-xs.start-xs
+            .row.middle-xs      
               .col-xs
-                a.grey-button              
+                a.grey-button(href="#") Назад
+              .col-xs.end-xs
+                a.button-checkout(href="#") Далее 
+              .form-step.step-3                  
 
                     
         .col-xs    
@@ -140,7 +160,7 @@ html(lang="en")
                 span.icon-cup150
                 span.info
                   h4 Стакан 150мл, белый
-              .col-xs.row.middle-xs
+              .col-xs.row
                 .col-xs         
                   .amount-block
                     p Количество
@@ -148,10 +168,13 @@ html(lang="en")
                 .col-xs
                   .cost-block  
                     p Стоимость
-                    span.cost 1320        
-          .row.end-xs
-            .col-xs
-              span.text-price 13480р 
+                    span.cost 1320
+                    
+            li.row                    
+              //- .col-xs.start-xs
+              //-   h4 Заказчик      
+              //- .col-xs.end-xs
+              //-   span.text-price 13480р    
 
     footer
       .container
