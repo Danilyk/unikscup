@@ -66,7 +66,7 @@ html(lang="en")
                   p.step-description Заказ
                 
             form
-              .form-step.step-1
+              .form-step.step-1.active
                 h3 Компания
                 .form-control.error
                   p Название компании
@@ -83,8 +83,8 @@ html(lang="en")
                   input(type="text" placeholder="Мы позвоним для уточнения деталей и согласования доставки")   
                 .row.end-xs
                   .col-xs
-                    a.button-checkout Далее
-              .form-step.step-2.active
+                    a.button-checkout(href="#") Далее
+              .form-step.step-2
                 h3 Адрес доставки
                 .form-control 
                   p Город
