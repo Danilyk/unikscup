@@ -142,6 +142,16 @@
         resize: vertical;
       }
 
+      &.error {
+        p {
+          color: #d9534f;
+        }
+
+        input,textarea {
+          border-color: #d9534f;
+        }
+      }
+
       input,textarea {
         transition: 0.2s;
         font-size: 13px;
@@ -157,16 +167,6 @@
           border-color: #66afe9;
           outline: 0;
           box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-        }
-      }
-
-      &.error {
-        p {
-          color: red;
-        }
-
-        input,textarea {
-          border-color: red;
         }
       }
     }
