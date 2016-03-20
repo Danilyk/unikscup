@@ -1,0 +1,132 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--headerbgcolor);
+  z-index: 999;
+
+  .header-top {
+    box-shadow: var(--headershadow);
+    align-items: center;
+    height: 70px;
+    z-index: 999;
+    position: relative;
+
+    .container,
+    .container-fluid {
+      height: 100%;
+
+      .row {
+        height: 100%;
+      }
+    }
+
+    p {
+      font-size: 10px;
+
+      &.phone {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    a.logo {
+      display: block;
+      text-indent: -9999px;
+      background: url('../img/logo.png') center center no-repeat;
+      width: 160px;
+      height: 36px;
+    }
+
+    .contacts {
+      margin-right: 10px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      & {
+        .contacts {
+          display: none;
+        }
+
+        p.phone {
+          font-size: 14px;
+        }
+
+        a.order-button {
+          font-size: 7px;
+        }
+
+        a.logo {
+          width: 107px;
+          height: 24px;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .header-bottom {
+    height: 50px;
+
+    .container,
+    .row {
+      height: 100%;
+    }
+
+    .nav-button {
+      display: none;
+
+      a {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url(../img/menu.png);
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      & {
+        span.icon-cart p {
+          display: none;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      & {
+        ul.nav {
+          display: none;
+        }
+
+        .nav-button {
+          display: flex;
+        }
+      }
+    }
+
+    ul.nav {
+      list-style: none;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        color: var(--navtxtcolor);
+
+        a {
+          display: block;
+          padding: 14px 20px;
+          transition: 0.2s;
+          font-weight: bold;
+          font-size: 14px;
+          z-index: 1;
+
+          &:hover {
+            color: #666;
+            background-color: rgba(100,100,100,0.1);
+          }
+        }
+      }
+    }
+  }
+}
