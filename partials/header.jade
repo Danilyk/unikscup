@@ -1,0 +1,33 @@
+header
+  .header-top
+    .container-fluid
+      .row.middle-xs
+        .col-xs-4
+          a.logo(href="#") Unikscup
+        .col-xs-8.row.middle-xs.end-xs
+          .contacts.text-right
+            p г.Новосибирск
+            p ул.Приграничная
+            p.top-offset-5
+              a(href="mailto:info@unikscup.ru") info@unikscup.ru
+          .center-xs      
+            p.phone +7&nbsp;(383)&nbsp;303&nbsp;45&nbsp;50
+            a.order-button(href="#") Заказать&nbsp;обратный&nbsp;звонок
+  .header-bottom
+    .container-fluid
+      .row.end-xs
+        .col-xs.row.middle-xs.nav-button
+          span
+            a(href="#")
+        ul.row.nav.col-sm.middle-xs
+          - list = ['Главная', 'Продукция', 'Сотрудничеcтво', 'О компании', 'Контакты']
+            each title in list 
+              li: a(href="#")
+                = title  
+        .row.end-xs.middle-xs
+          span
+            a(href="#")
+              span.icon.icon-cart
+                p В&nbsp;корзине&nbsp;2&nbsp;товара
+          span
+            a.button-checkout(href="#") оформить заказ
