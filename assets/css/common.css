@@ -1,0 +1,58 @@
+.row,
+.container {
+  max-width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  font-family: var(--sans);
+}
+
+body {
+  background-color: var(--mainbgcolor);
+  padding-top: 120px;
+}
+
+h1, h2, h3 {
+  width:100%;
+}
+.top-offset-5 {
+  margin-top: 5px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-price {
+  color: var(--pricecolor);
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin-top: 45px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.container {
+  color: var(--maintxtcolor);
+  min-width: 300px;
+}
+
+/* Grid fixes */
+@media only screen and (min-width: 64em) {
+  .container {
+      width: 62rem;
+  }
+}

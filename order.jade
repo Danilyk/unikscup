@@ -5,6 +5,7 @@ html(lang="en")
     link(rel="stylesheet" href="dist/flexboxgrid.css" type="text/css")
     link(rel="stylesheet" href="dist/style.css" type="text/css")
     link(href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
+    script(src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript")
     title
       = 'Unikscup'
     
@@ -55,20 +56,20 @@ html(lang="en")
         .col-xs
           .order-list
             .order-progress-bar.row.between-xs
-              .col-xs.left.done.step-1
+              .col-xs.left.step-1.active
                 .order-progress-circle.center-xs  
                   p.step-description Заказчик
-              .col-xs.middle.done.step-2    
+              .col-xs.middle.step-2    
                 .order-progress-circle.center-xs
                   p.step-description Доставка
-              .col-xs.right.active.step-3    
+              .col-xs.right.step-3    
                 .order-progress-circle.center-xs
                   p.step-description Заказ
                 
             form
-              .form-step.step-1
+              .form-step.step-1.active
                 h3 Компания
-                .form-control.error
+                .form-control
                   p Название компании
                   input(type="text" placeholder="Полное юридическое название компании")  
                 h3 Контакты
@@ -84,24 +85,32 @@ html(lang="en")
                 .row.end-xs
                   .col-xs
                     a.button-checkout(href="#") Далее
-              .form-step.step-2.active
+              .form-step.step-2
                 h3 Способ доставки
                 .row
-                  .col-xs
-                    .form-control.delivery-buttons
-                      p Самовывоз
-                      input(id="pickup" type="radio" name="delivery" value="pickup")
-                      label(for="pickup")
-                  .col-xs
-                    .form-control
-                      p Доставка по Новосибирску
-                      input(id="courier" type="radio" name="delivery" value="pickup")    
-                      label(for="courier")
-                  .col-xs
-                    .form-control
-                      p Доставка до терминала ТК
-                      input(id="terminal" type="radio" name="delivery" value="pickup")
-                      label(for="terminal")
+                  div
+                    .form-control.row
+                      .col-xs.radio
+                        input(id="pickup" type="radio" name="delivery" value="pickup")
+                        label(for="pickup")
+                      .col-xs
+                        p Самовывоз
+                        span со склада в г.Новосибирске
+                  div
+                    .form-control.row
+                      .col-xs.radio
+                        input(id="courier" type="radio" name="delivery" value="pickup")    
+                        label(for="courier")
+                      .col-xs
+                        p Доставка по Новосибирску
+                        span Курьерская
+                  div
+                    .form-control.row
+                      .col-xs.radio
+                        input(id="terminal" type="radio" name="delivery" value="pickup")
+                        label(for="terminal")
+                      .col-xs
+                        p Доставка до терминала ТК                        
                 h3 Адрес доставки
                 .form-control 
                   p Город
@@ -129,12 +138,69 @@ html(lang="en")
                 .form-control 
                   p Примечания
                   textarea(type="text" placeholder="Кого спросить на вахте, есть ли шлагбаум на въезде на территорию и так далее...") 
-            .row.middle-xs      
-              .col-xs
-                a.grey-button(href="#") Назад
-              .col-xs.end-xs
-                a.button-checkout(href="#") Далее 
-              .form-step.step-3                  
+                .row.middle-xs      
+                  .col-xs
+                    a.grey-button(href="#") Назад
+                  .col-xs.end-xs
+                    a.button-checkout(href="#") Далее 
+              .form-step.step-3
+                h3 Реквизиты компании
+                
+                .form-control
+                  p Для экономии времени, вы можете ввести реквизиты вашей компании сейчас и мы сразу же выставим счет.
+                
+                .row
+                  div
+                    .form-control.row
+                      .col-xs.radio
+                        input(id="pickup" type="radio" name="delivery" value="pickup")
+                        label(for="pickup")
+                      .col-xs
+                        p Потом
+                        span Также вы можете отправить реквизиты по электронной почте
+                  div
+                    .form-control.row
+                      .col-xs.radio
+                        input(id="courier" type="radio" name="delivery" value="pickup")    
+                        label(for="courier")
+                      .col-xs
+                        p Сейчас
+                        span Открыть форму заполнения
+                        
+                .row                 
+                  .form-control.col-xs
+                    p ИНН
+                    input(type="text" placeholder="5407249745")
+                  .form-control.col-xs
+                    p КПП
+                    input(type="text" placeholder="540701001")  
+                  .form-control.col-xs
+                    p ОГРН
+                    input(type="text" placeholder="1155476099888")       
+                .form-control
+                  p Юридический адрес
+                  input(type="text" placeholder="630090 г. Новосибирск, ул. Николаева, 12") 
+                .form-control
+                  p Фактический адрес
+                  input(type="text" placeholder="630090 г. Новосибирск, ул. Николаева, 12")          
+                .row                 
+                  .form-control.col-xs(style="flex-grow: 0.9;")
+                    p БИК
+                    input(type="text" placeholder="045004777")
+                  .form-control.col-xs
+                    p Расчетный счет
+                    input(type="text" placeholder="40702810606000001925")  
+                  .form-control.col-xs
+                    p Корреспондентский счет
+                    input(type="text" placeholder="40702810606000001925")  
+                .form-control
+                  p Наименование банка
+                  input(type="text" pladceholder="АКБ Российский Капитал (ПАО) филиал Новосибирский г.Новосибирск")      
+                .row.middle-xs      
+                  .col-xs
+                    a.grey-button(href="#") Назад
+                  .col-xs.end-xs
+                    a.button-checkout(href="#") Далее  
 
                     
         .col-xs    
@@ -154,28 +220,44 @@ html(lang="en")
                 .col-xs    
                   .cost-block  
                     p Стоимость
-                    span.cost 1320        
+                    span.cost 1320&nbsp;&#x20bd;        
             li.row
               .col-xs.row.middle-xs.start-xs
                 span.icon-cup150
                 span.info
                   h4 Стакан 150мл, белый
-              .col-xs.row
-                .col-xs         
+              .col-xs.row.middle-xs
+                .col-xs              
                   .amount-block
                     p Количество
                     span.amount 1100
-                .col-xs
+                .col-xs    
                   .cost-block  
                     p Стоимость
-                    span.cost 1320
-                    
-            li.row                    
-              //- .col-xs.start-xs
-              //-   h4 Заказчик      
-              //- .col-xs.end-xs
-              //-   span.text-price 13480р    
-
+                    span.cost 1320&nbsp;&#x20bd;
+          .row.end-xs
+            .col-xs
+              p.text-price 3320р  
+          .row
+            .col-xs
+              h3 Заказчик
+          .row
+            ul.order.no-padding
+              li
+                h3 ООО "Рога и копыта"
+                p Иванов Иван Иванович
+                p ivan.ivan@gmail.com
+                p 8 913 987 65 43
+          .row
+            .col-xs
+              h3 Доставка
+          .row
+            ul.order.no-padding
+              li
+                h3 Курьерская служба СДЭК
+                p 630090 Новосибирск,
+                p ул.Николаева, 12, офис 520  
+    script(src="dist/main.js" rel="text/javascript")
     footer
       .container
         .row.footer-content.start-xs

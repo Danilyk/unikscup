@@ -1,0 +1,138 @@
+@define-mixin order-button {
+  display: inline-block;
+  background: var(--orange);
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--white);
+  border-radius: 21px;
+  padding: 6px 13px;
+  text-decoration: none;
+  border: var(--border);
+  border-color: var(--orange);
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--orange);
+    background: var(--white);
+  }
+
+  &:active {
+    box-shadow: inset 3px 3px 3px var(--navtxtcolor);
+  }
+}
+
+.grey-button {
+  display: inline-block;
+  background: var(--lightgrey);
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 8px 21px;
+  color: var(--white);
+  border-radius: 5px;
+  border: 2px solid var(--lightgrey);
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--lightgrey);
+  }
+}
+
+@define-mixin icon-cup {
+  background: url('../img/cupboard2.png');
+  background-repeat: no-repeat;
+  height: 55px;
+}
+
+.order-button {
+  @mixin order-button;
+  text-transform: uppercase;
+
+  &.orange {
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+}
+
+.button-checkout {
+  display: inline-block;
+  background: var(--lightgreen);
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 8px 21px;
+  color: var(--white);
+  border-radius: 5px;
+  border: 2px solid var(--lightgreen);
+
+  &:hover {
+    color: var(--lightgreen);
+    background-color: var(--white);
+  }
+
+  &:focus {
+    box-shadow: inset 2px 2px 2px #bbb;
+  }
+}
+
+/* -- Icons -- */
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+
+  &.icon-cart {
+    background: url('../img/cart.png') center center no-repeat;
+    padding-left: 24px;
+    background-position: 0;
+    width: auto;
+    margin-right: 20px;
+  }
+}
+
+.icon-cup150 {
+  display: inline-block;
+  width: 40px;
+  height: 55px;
+  @mixin icon-cup;
+  background-position: 4px 0;
+}
+
+.icon-cup250 {
+  display: inline-block;
+  width: 40px;
+  height: 55px;
+  @mixin icon-cup;
+  background-position: -48px 0;
+}
+
+.icon-cup350 {
+  display: inline-block;
+  width: 40px;
+  height: 55px;
+  @mixin icon-cup;
+  background-position: -102px 0;
+}
+
+.icon-cup450 {
+  display: inline-block;
+  width: 40px;
+  height: 55px;
+  @mixin icon-cup;
+  background-position: -156px 0;
+}
+
+.icon-cup80 {
+  display: inline-block;
+  width: 40px;
+  height: 55px;
+  @mixin icon-cup;
+  background-position: -234px 0;
+}
+
+.icon-cup90 {
+  display: inline-block;
+  width: 40px;
+  height: 55px;
+  @mixin icon-cup;
+  background-position: -295px 0;
+}

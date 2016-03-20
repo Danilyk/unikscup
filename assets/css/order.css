@@ -129,6 +129,20 @@
       }
     }
 
+    .row .col-xs {
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &.radio {
+        flex-grow: 0;
+      }
+    }
+
     .form-control {
       margin-bottom: 15px;
 
@@ -146,6 +160,11 @@
         p {
           color: #d9534f;
         }
+
+        input,
+        textarea {
+          border-color: #d9534f;
+        }
       }
 
       input,textarea {
@@ -153,7 +172,7 @@
         font-size: 13px;
         box-sizing: border-box;
         width: 100%;
-        padding: 10px 15px;
+        padding: 10px 13px;
         border-radius: 10px;
         box-shadow: none;
         outline: none;
@@ -166,46 +185,55 @@
         }
       }
     }
-  }
-}
 
-input[type=radio] {
-  display: none;
-}
+    input[type=radio] {
+      display: none;
+    }
 
-input[type=radio]:checked + label:after {
-    content: "";
-    background-color: var(--pricecolor);
-    border-radius: 15px;
-    position: relative;
-    left: -25px;
-    top: -5px;
+    input[type=radio]:checked + label:after {
+        content: "";
+        background-color: var(--pricecolor);
+        border-radius: 15px;
+    }
 
+    label{
+      width: 30px;
+      height: 30px;
+      position: relative;
+      display: block;
 
-}
+      &:before{
+        content: "";
+        display: inline-block;
 
-label{
+        width: 26px;
+        height: 26px;
+        background-color: var(--white);
+        border: var(--border) #dbdbdb;
+        border-radius: 15px;
+      }
 
-  &:before{
-    content: "";
-    display: inline-block;
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+      }
+    }
 
-    width: 26px;
-    height: 26px;
+    .radio + .col-xs p {
+      width: 85px;
+    }
 
-    position: relative;
-    background-color: var(--white);
-    border: var(--border) #dbdbdb;
-    border-radius: 15px;
-  }
-
-  &:after {
-    content: "";
-    display: inline-block;
-
-
-    width: 20px;
-    height: 20px;
-
+    .radio + .col-xs span {
+      width: 85px;
+      font-size: 11px;
+      line-height: 1.2;
+      display: block;
+    }
   }
 }
