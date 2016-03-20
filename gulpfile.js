@@ -30,7 +30,7 @@ gulp.task('styles', function () {
         require('postcss-css-variables'),
     ];
 
-    return gulp.src('assets/css/*.css')
+    return gulp.src(['assets/css/style.css', 'assets/css/flexboxgrid.css'])
         .pipe(!isProduction ? sourcemaps.init() : util.noop())
         .pipe(postcss(processors))
         .pipe(!isProduction ? sourcemaps.write('.') : util.noop())
