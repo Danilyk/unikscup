@@ -1,5 +1,5 @@
 .row,
-.container {
+.container-fluid {
   max-width: 95vw;
   margin-left: auto;
   margin-right: auto;
@@ -12,6 +12,7 @@
 body {
   background-color: var(--mainbgcolor);
   padding-top: 120px;
+  min-width: 320px;
 }
 
 h1, h2, h3 {
@@ -45,7 +46,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.container {
+.container-fluid {
   color: var(--maintxtcolor);
   min-width: 300px;
 }

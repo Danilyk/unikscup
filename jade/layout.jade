@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    link(rel="stylesheet" href="dist/flexboxgrid.css" type="text/css")
+    link(rel="stylesheet" href="dist/style.css" type="text/css")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
+    script(src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript")
+    title
+      = 'Unikscup'
+  body
+    include ../partials/header.jade
+    .container-fluid
+      block content
+    script(src="dist/main.js" rel="text/javascript")
+    include ../partials/footer.jade

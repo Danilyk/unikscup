@@ -69,7 +69,7 @@ header {
   .header-bottom {
     height: 50px;
 
-    .container,
+    .container-fluid,
     .row {
       height: 100%;
     }
