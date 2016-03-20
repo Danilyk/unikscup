@@ -1,5 +1,3 @@
-@import '../../node_modules/normalize.css/normalize.css';
-@import "style.css";
 .bgimage {
   display: block;
   background: url('../img/bgpage.png') center center no-repeat;
@@ -31,7 +29,7 @@ body {
   width: 930px;
   position: relative;
   margin: -35px auto 0 auto;
-  min-height:1100px; 
+  min-height:1100px;
 
 
 }

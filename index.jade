@@ -13,9 +13,9 @@ html(lang="en")
       .header-top
         .container
           .row.middle-xs
-            .col-xs-3
+            .col-xs-4
               a.logo(href="#") Unikscup
-            .col-xs-9.row.middle-xs.end-xs
+            .col-xs-8.row.middle-xs.end-xs
               .contacts.text-right
                 p г.Новосибирск
                 p ул.Приграничная
@@ -26,8 +26,11 @@ html(lang="en")
                 a.order-button(href="#") Заказать&nbsp;обратный&nbsp;звонок
       .header-bottom
         .container
-          .row
-            ul.nav.col-xs-8.middle-xs
+          .row.end-xs
+            .col-xs.row.middle-xs.nav-button
+              span
+                a(href="#")
+            ul.row.nav.col-sm.middle-xs
               li
                 a(href="#") Главная
               li
@@ -38,12 +41,13 @@ html(lang="en")
                 a(href="#") О компании
               li
                 a(href="#") Контакты   
-            .row.col-xs-4.end-xs.middle-xs
-              a.col-xs.row.middle-xs(href="#")
-                span.icon.icon-cart
-                span В корзине 2 товара
-              .row.col-xs
-                a.button-checkout(href="#") оформить заказ            
+            .row.end-xs.middle-xs
+              span
+                a(href="#")
+                  span.icon.icon-cart
+                    p В&nbsp;корзине&nbsp;2&nbsp;товара
+              span
+                a.button-checkout(href="#") оформить заказ           
     .container.basket
       .row.center-xs
         h1 Корзина
@@ -58,54 +62,14 @@ html(lang="en")
               span.icon-cup150
               span.info
                 h4 Стакан 150мл, белый
-                p Изготовлен из ламинированного картона плотностью 210 г/м2
-            .col-xs.row.middle-xs
+            .col-xs.row.middle-xs.around-xs
               .amount-block
                 p Количество
-                .minus-pic
-                  a.minus-link(href="#")
                 span.amount 1100
-                .plus-pic
-                  a.plus-link(href="#")
-              .cost-block  
-                p Стоимость
-                span.cost 1320
-              .cross-block
-                a.cross(href="#") 
-
-          li.row
-            .col-xs.row.middle-xs.start-xs
-              span.icon-cup250
-              span.info
-                h4 Стакан 250мл, белый
-                p Изготовлен из ламинированного картона плотностью 270 г/м2
-            .col-xs.row.middle-xs
-              .amount-block
-                p Количество
-                .minus-pic
-                  a.minus-link(href="#")
-                span.amount 1100
-                .plus-pic
-                  a.plus-link(href="#")
-              .cost-block  
-                p Стоимость
-                span.cost 1320
-              .cross-block
-                a.cross(href="#") 
-          li.row
-            .col-xs.row.middle-xs.start-xs
-              span.icon-cup350
-              span.info
-                h4 Стакан 350мл, белый
-                p Изготовлен из ламинированного картона плотностью 300 г/м2
-            .col-xs.row.middle-xs
-              .amount-block
-                p Количество
-                .minus-pic
-                  a.minus-link(href="#")
-                span.amount 1100
-                .plus-pic
-                  a.plus-link(href="#")
+                  .minus-pic
+                    a.minus-link(href="#")
+                  .plus-pic
+                    a.plus-link(href="#")
               .cost-block  
                 p Стоимость
                 span.cost 1320
@@ -113,63 +77,43 @@ html(lang="en")
                 a.cross(href="#")
           li.row
             .col-xs.row.middle-xs.start-xs
-              span.icon-cup450
+              span.icon-cup150
               span.info
-                h4 Стакан 450мл, белый
-                p Изготовлен из ламинированного картона плотностью 320 г/м2
-            .col-xs.row.middle-xs
+                h4 Стакан 150мл, белый
+            .col-xs.row.middle-xs.around-xs
               .amount-block
                 p Количество
-                .minus-pic
-                  a.minus-link(href="#")
                 span.amount 1100
-                .plus-pic
-                  a.plus-link(href="#")
+                  .minus-pic
+                    a.minus-link(href="#")
+                  .plus-pic
+                    a.plus-link(href="#")
               .cost-block  
                 p Стоимость
                 span.cost 1320
               .cross-block
-                a.cross(href="#")
+                a.cross(href="#")  
           li.row
             .col-xs.row.middle-xs.start-xs
-              span.icon-cup80
+              span.icon-cup150
               span.info
-                h4 Крышка для бумажного стакана 80мм.
-                p Подходит для стаканов 250мл.
-            .col-xs.row.middle-xs
+                h4 Стакан 150мл, белый
+            .col-xs.row.middle-xs.around-xs
               .amount-block
                 p Количество
-                .minus-pic
-                  a.minus-link(href="#")
                 span.amount 1100
-                .plus-pic
-                  a.plus-link(href="#")
+                  .minus-pic
+                    a.minus-link(href="#")
+                  .plus-pic
+                    a.plus-link(href="#")
               .cost-block  
                 p Стоимость
                 span.cost 1320
               .cross-block
-                a.cross(href="#")
-          li.row
-            .col-xs.row.middle-xs.start-xs
-              span.icon-cup90
-              span.info
-                h4 Крышка для бумажного стакана 90мм.
-                p Подходит для стаканов 350 и 450мл.
-            .col-xs.row.middle-xs
-              .amount-block
-                p Количество
-                .minus-pic
-                  a.minus-link(href="#")
-                span.amount 1100
-                .plus-pic
-                  a.plus-link(href="#")
-              .cost-block  
-                p Стоимость
-                span.cost 1320
-              .cross-block
-                a.cross(href="#")                                        
+                a.cross(href="#")    
+                                       
         .col-xs.end-xs
-          a.order-button.orange Оформить заказ      
+          a(href="#").order-button.orange Оформить заказ      
     footer
       .container
         .row.footer-content.start-xs
