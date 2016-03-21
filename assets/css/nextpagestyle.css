@@ -4,12 +4,10 @@
   width: 1170px;
   height: 500px;
 }
-body {
-  /*padding-top: 0;*/
-}
 
 .bgimage {
       color: var(--white);
+      margin: auto auto;
 
   h1 {
     margin: 0 0;
@@ -20,16 +18,77 @@ body {
 
   p {
     font-size: 40px;
-    font-weight: lighter;
+    font-family: 'Open Sans Light';
   }
 }
 
 .howwedoit {
+  box-shadow: 0 1px 3px #59595D;
   background-color: var(--white);
   width: 930px;
   position: relative;
-  margin: -35px auto 0 auto;
+  margin: -35px auto 75px auto;
   min-height:1100px;
+  padding: 0 90px 170px 90px;
 
+  h3 {
+    font-family: 'Open Sans Light';
+    font-size: 22px;
+  }
+
+  h2{
+    font-family: 'Open Sans Light';
+    font-size: 26px;
+  }
+
+  p {
+    color: #828385;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  h4 {
+    margin: 0 auto;
+  }
+
+  ul p {
+    margin: 0 0;
+  }
+}
+
+ul.story {
+  list-style-type: none;
+}
+
+.list-item-1::before {
+  position: relative;
+  content: '1';
+  border: 1px solid #828385;
+  border-radius: 30px;
+  padding: 7px 14px;
+  left: -50px;
+  top: 22px;
+
+}
+
+.list-item-2::before {
+  position: relative;
+  content: '2';
+  border: 1px solid #828385;
+  border-radius: 30px;
+  padding: 7px 14px;
+  left: -50px;
+  top: 22px;
+
+}
+
+.list-item-3::before {
+  position: relative;
+  content: '3';
+  border: 1px solid #828385;
+  border-radius: 30px;
+  padding: 7px 14px;
+  left: -50px;
+  top: 22px;
 
 }
