@@ -4,29 +4,32 @@ block content
     h1 Оформление заказа
   .row.center-xs
     h2 Готово
-    p Проверьте правильность введенных даннхы.После этого, нажмите на кнопку "подтвердить заказ" для того, чтобыотправить заказ в обработку.
+    p Проверьте правильность введенных данных.После этого, нажмите на кнопку "подтвердить заказ" для того, чтобы отправить заказ в обработку.
+    br
+    br
+    br
   
   .row
-    .col-xs
+    .col-xs.no-grow
       h3 Заказчик
-    ul.col-xs.order.no-padding
+    ul.col-xs-offset-1.col-xs.order.no-padding
       li
         h3 ООО "Рога и копыта"
         p Иванов Иван Иванович
         p ivan.ivan@gmail.com
         p 8 913 987 65 43
   .row
-    .col-xs
+    .col-xs.no-grow
       h3 Доставка
-    ul.col-xs.order.no-padding
+    ul.col-xs-offset-1.col-xs.order.no-padding.no-border
       li
         h3 Курьерская служба СДЭК
         p 630090 Новосибирск,
         p ул.Николаева, 12, офис 520    
   .row
-    .col-xs   
+    .col-xs.no-grow   
       h3 Ваш заказ
-    ul.order
+    ul.order.col-xs.no-border
       li.row
         .col-xs.row.middle-xs.start-xs
           span.icon-cup150
@@ -56,19 +59,26 @@ block content
               p Стоимость
               span.cost 1320&nbsp;&#x20bd;
   .row
-    .col-xs
+    .col-xs.no-grow
       h3 Реквизиты
-    ul.col-xs.order.no-padding
-      li
-        h3 ООО "Рога и копыта"
-        p Иванов Иван Иванович
-        p ivan.ivan@gmail.com
-        p 8 913 987 65 43  
-    ul.col-xs.order
-      li
-        p ИНН 123123123123123
-        p КПП 123123123123123
-        p ОГРН 123123123123123123123
+    ul.col-xs.order.no-padding.no-border
+      li.row
+        .col-xs.no-grow
+          h3 ООО "Рога и копыта"
+          p Иванов Иван Иванович
+          p ivan.ivan@gmail.com
+          p 8 913 987 65 43
+        .col-xs    
+          p ИНН 5407249745
+          p КПП 540701001
+          p ОГРН 1155476099888
+        .col-xs
+          p БИК 045004777
+          p Рассчетный счет 40702810606000001925
+          p Корреспондентский счет 40702810606000001925
+          p Наименование банка АКБ Российский Капитал (ПАО) филиал Новосибирский г. Новосибирск
+        
+        
   .form-control 
     p Примечания к заказу
     textarea(type="text" placeholder="Сообщите нам информацию, которую вы считаете важной, не вошедшую в предыдущие шаги")
