@@ -12,7 +12,7 @@
 body {
   background-color: var(--mainbgcolor);
   padding-top: 120px;
-  min-width: 320px;
+  min-width: 320px; 
 }
 
 h1, h2, h3 {
