@@ -12,7 +12,7 @@
 body {
   background-color: var(--mainbgcolor);
   padding-top: 120px;
-  min-width: 320px; 
+  min-width: 320px;
 }
 
 h1, h2, h3 {
@@ -49,6 +49,10 @@ h1 {
 .container-fluid {
   color: var(--maintxtcolor);
   min-width: 300px;
+}
+
+.no-grow {
+  flex-grow: 0;
 }
 
 /* Grid fixes */
