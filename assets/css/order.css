@@ -120,6 +120,14 @@
  		}
  	}
 
+ .form-step {
+   display: none;
+
+   &.active {
+    dispay: block;
+   }
+ }
+
   form {
     .form-step {
       display: none;
