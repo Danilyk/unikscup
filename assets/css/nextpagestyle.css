@@ -1,31 +1,51 @@
-.bgimage {
-  display: block;
-  background: url('../img/bgpage.png') center center no-repeat;
-  width: 1170px;
-  height: 500px;
-}
 
 .bgimage {
-      color: var(--white);
-      margin: auto auto;
+    color: var(--white);
+    margin: auto auto;
+    display: block;
+    background: url('../img/bgpage.png') center center no-repeat;
+    height: 500px;
 
   h1 {
     margin: 0 0;
     font-size: 72px;
     padding-top: 140px;
     margin-bottom: 35px;
+
+    @media (width <= 840px) {
+      font-size: 32px;
+    }
+
   }
 
   p {
     font-size: 40px;
     font-family: 'Open Sans Light';
+
+    @media (width <= 840px) {
+      font-size: 20px;
+    }
   }
+
+  @media (width <= 840px) {
+    height: 350px;
+  }
+
+  @media (width <= 480px) {
+    height: 200px;
+    min-width: 354px;
+
+    h1 {
+      padding-top: 0;
+    }
+  }
+
 }
 
 .howwedoit {
   box-shadow: 0 1px 3px #59595D;
   background-color: var(--white);
-  width: 930px;
+  width: 50%;
   position: relative;
   margin: -35px auto 75px auto;
   min-height:1100px;
@@ -34,17 +54,32 @@
   h3 {
     font-family: 'Open Sans Light';
     font-size: 22px;
+
+    @media (width <= 840px) {
+      font-size: 16px;
+    }
+
   }
 
   h2{
     font-family: 'Open Sans Light';
     font-size: 26px;
+
+    @media (width <= 840px) {
+      font-size: 18px;
+    }
+
   }
 
   p {
     color: #828385;
     font-size: 16px;
     margin: 10px 0;
+
+    @media (width <= 840px) {
+      font-size: 12px;
+    }
+
   }
 
   h4 {

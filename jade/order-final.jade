@@ -1,0 +1,71 @@
+extends ./layout.jade  
+block content     
+  .row.center-xs
+    h1 Оформление заказа
+  .row.center-xs
+    h2 Готово
+    p Проверьте правильность введенных даннхы.После этого, нажмите на кнопку "подтвердить заказ" для того, чтобыотправить заказ в обработку.
+  
+  .row
+    .col-xs
+      h3 Заказчик
+    ul.col-xs.order.no-padding
+      li
+        h3 ООО "Рога и копыта"
+        p Иванов Иван Иванович
+        p ivan.ivan@gmail.com
+        p 8 913 987 65 43
+  .row
+    .col-xs
+      h3 Доставка
+    ul.col-xs.order.no-padding
+      li
+        h3 Курьерская служба СДЭК
+        p 630090 Новосибирск,
+        p ул.Николаева, 12, офис 520    
+  .row
+    .col-xs   
+      h3 Ваш заказ
+    ul.order
+      li.row
+        .col-xs.row.middle-xs.start-xs
+          span.icon-cup150
+          span.info
+            h4 Стакан 150мл, белый
+        .col-xs.row.middle-xs
+          .col-xs              
+            .amount-block
+              p Количество
+              span.amount 1100
+          .col-xs    
+            .cost-block  
+              p Стоимость
+              span.cost 1320&nbsp;&#x20bd;        
+      li.row
+        .col-xs.row.middle-xs.start-xs
+          span.icon-cup150
+          span.info
+            h4 Стакан 150мл, белый
+        .col-xs.row.middle-xs
+          .col-xs              
+            .amount-block
+              p Количество
+              span.amount 1100
+          .col-xs    
+            .cost-block  
+              p Стоимость
+              span.cost 1320&nbsp;&#x20bd;
+  .row
+    .col-xs
+      h3 Реквизиты
+    ul.col-xs.order.no-padding
+      li
+        h3 ООО "Рога и копыта"
+        p Иванов Иван Иванович
+        p ivan.ivan@gmail.com
+        p 8 913 987 65 43  
+    ul.col-xs.order
+      li
+        p ИНН 123123123123123
+        p КПП 123123123123123
+        p ОГРН 123123123123123123123
