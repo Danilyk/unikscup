@@ -15,7 +15,7 @@ block content
           .col-xs.right.step-3    
             .order-progress-circle.center-xs
               p.step-description Заказ
-            
+
         form
           .form-step.step-1.active
             h3 Компания
@@ -34,7 +34,7 @@ block content
               input(type="text" placeholder="Мы позвоним для уточнения деталей и согласования доставки")   
             .row.end-xs
               .col-xs
-                a.button-checkout(href="#") Далее
+                a.button-checkout.next-step-button(href="#" data-type="next" data-step="step-1") Далее
           .form-step.step-2
             h3 Способ доставки
             .row
@@ -90,9 +90,9 @@ block content
               textarea(type="text" placeholder="Кого спросить на вахте, есть ли шлагбаум на въезде на территорию и так далее...") 
             .row.middle-xs      
               .col-xs
-                a.grey-button(href="#") Назад
+                a.grey-button.prev-step-button(href="#" data-type="prev" data-step="step-2") Назад
               .col-xs.end-xs
-                a.button-checkout(href="#") Далее 
+                a.button-checkout.next-step-button(href="#" data-type="next" data-step="step-2") Далее
           .form-step.step-3
             h3 Реквизиты компании
             
@@ -148,9 +148,87 @@ block content
               input(type="text" pladceholder="АКБ Российский Капитал (ПАО) филиал Новосибирский г.Новосибирск")      
             .row.middle-xs      
               .col-xs
-                a.grey-button(href="#") Назад
+                a.grey-button.prev-step-button(href="#" data-type="prev" data-step="step-3") Назад
               .col-xs.end-xs
-                a.button-checkout(href="#") Далее  
+                a.button-checkout.next-step-button(href="#" data-type="next" data-step="step-3") Далее
+      .form-step.step-final
+        .row.center-xs
+          h1 Оформление заказа
+        .row.center-xs
+          h2 Готово
+          p Проверьте правильность введенных даннхы.После этого, нажмите на кнопку "подтвердить заказ" для того, чтобыотправить заказ в обработку.
+
+        .row
+          .col-xs
+            h3 Заказчик
+          ul.col-xs.order.no-padding
+            li
+              h3 ООО "Рога и копыта"
+              p Иванов Иван Иванович
+              p ivan.ivan@gmail.com
+              p 8 913 987 65 43
+        .row
+          .col-xs
+            h3 Доставка
+          ul.col-xs.order.no-padding
+            li
+              h3 Курьерская служба СДЭК
+              p 630090 Новосибирск,
+              p ул.Николаева, 12, офис 520
+        .row
+          .col-xs
+            h3 Ваш заказ
+          ul.order
+            li.row
+              .col-xs.row.middle-xs.start-xs
+                span.icon-cup150
+                span.info
+                  h4 Стакан 150мл, белый
+              .col-xs.row.middle-xs
+                .col-xs
+                  .amount-block
+                    p Количество
+                    span.amount 1100
+                .col-xs
+                  .cost-block
+                    p Стоимость
+                    span.cost 1320&nbsp;&#x20bd;
+            li.row
+              .col-xs.row.middle-xs.start-xs
+                span.icon-cup150
+                span.info
+                  h4 Стакан 150мл, белый
+              .col-xs.row.middle-xs
+                .col-xs
+                  .amount-block
+                    p Количество
+                    span.amount 1100
+                .col-xs
+                  .cost-block
+                    p Стоимость
+                    span.cost 1320&nbsp;&#x20bd;
+        .row
+          .col-xs
+            h3 Реквизиты
+          ul.col-xs.order.no-padding
+            li
+              h3 ООО "Рога и копыта"
+              p Иванов Иван Иванович
+              p ivan.ivan@gmail.com
+              p 8 913 987 65 43
+          ul.col-xs.order
+            li
+              p ИНН 123123123123123
+              p КПП 123123123123123
+              p ОГРН 123123123123123123123
+        .form-control
+          p Примечания к заказу
+          textarea(type="text" placeholder="Сообщите нам информацию, которую вы считаете важной, не вошедшую в предыдущие шаги")
+        .row.middle-xs
+          .col-xs
+            a.grey-button(href="#") Назад
+          .col-xs.end-xs
+            a.orange.order-button(href="#") Подтвердить заказ
 
                 
     .col-xs    
