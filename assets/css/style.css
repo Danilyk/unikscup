@@ -5,7 +5,9 @@
 @import "footer.css";
 @import "cart.css";
 @import 'order.css';
+@import 'order-final.css';
 @import "nextpagestyle.css";
+@import 'contacts.css';
 
 @custom-media --desktop (width <= 1024px);
 @custom-media --tablet (width <= 768px);

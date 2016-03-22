@@ -14,7 +14,6 @@
 }
 
 .order {
-  width: 100%;
   list-style-type: none;
   border-top: 1px solid var(--borderordercolor);
   margin-top: 0;
