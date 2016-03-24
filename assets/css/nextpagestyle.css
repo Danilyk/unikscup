@@ -33,7 +33,6 @@
 
   @media (width <= 480px) {
     height: 200px;
-    min-width: 354px;
 
     h1 {
       padding-top: 0;
@@ -45,11 +44,10 @@
 .howwedoit {
   box-shadow: 0 1px 3px #59595D;
   background-color: var(--white);
-  width: 70%;
   position: relative;
-  margin: -35px auto 75px auto;
+  margin: -35px 30px 75px;
   min-height:1100px;
-  padding: 0 90px 170px 90px;
+  padding: 0 10% 170px 10%;
 
   h3 {
     font-size: 22px;

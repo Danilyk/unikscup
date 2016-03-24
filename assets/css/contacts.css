@@ -1,29 +1,39 @@
+.contacts-cntainer {
+  ul {
+    list-style-type: none;
+    margin-bottom: 110px;
+    margin-left: 60px;
 
-/*
-ul {
-  list-style-type: none;
-  margin-bottom: 110px;
-  margin-left: 60px;
+    h4 {
+      font-weight: 400;
+      font-size: 22px;
+      margin-top: 0;
+    }
 
-  h4 {
-    font-weight: 400;
-    font-size: 22px;
-    margin-top: 0;
+    p {
+      font-size: 14px;
+      color: var(--black);
+    }
   }
 
-  p {
-    font-size: 14px;
-    color: var(--black);
+  .list-item-1::before {
+      left: -55px;
+      top: 25px;
+  }
+
+  img.map-pic {
+    background: url('../img/map-pic.png') center center no-repeat;
+    width: 380px;
+    height: 355px;
+  }
+
+  .map {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 703px) {
+    .map {
+      order: -1;
+    }
   }
 }
-
-.list-item-1::before {
-    left: -55px;
-    top: 25px;
-}
-
-img.map-pic {
-  background: url('../img/map-pic.png') center center no-repeat;
-  width: 380px;
-  height: 355px;
-}*/
