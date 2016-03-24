@@ -1,4 +1,12 @@
- .order-list {
+.form-step {
+  display: none;
+
+  &.active {
+   display: block;
+  }
+}
+
+.order-list {
 
  	.order-progress-bar {
  		padding: 30px 10px 20px 20px;
@@ -119,14 +127,6 @@
  			}
  		}
  	}
-
- .form-step {
-   display: none;
-
-   &.active {
-    dispay: block;
-   }
- }
 
   form {
     .form-step {

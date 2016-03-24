@@ -1,5 +1,4 @@
 input,textarea {
-  min-height: 100px;
   transition: 0.2s;
   font-size: 13px;
   box-sizing: border-box;
@@ -24,3 +23,7 @@ input,textarea {
 ul.order.no-border {
   border-top: none;
 }
+
+textarea {
+  min-height: 100px;
+};
