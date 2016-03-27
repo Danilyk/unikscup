@@ -21,7 +21,7 @@
   padding: 0;
 
   li.row .col-xs:first-child{
-    min-width: 220px;
+    min-width: 120px;
   }
 
   .info {
@@ -45,7 +45,7 @@
   }
 
   .amount {
-    padding: 1px 25px;
+    padding: 4px 25px;
     border: var(--border) #C7CCD0;
     border-radius: 18px;
     font-size: 16px;
@@ -70,7 +70,7 @@
 
   .cost {
     color: var(--pricecolor);
-    padding: 1px 25px;
+    padding: 4px 25px;
     border: var(--border) #c7ccd0;
     border-radius: 18px;
     font-size: 16px;
