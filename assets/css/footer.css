@@ -11,7 +11,9 @@ footer {
     }
   }
 
-
+  h4 {
+    text-transform: uppercase;
+  }
 
   ul {
     margin: 0;
@@ -21,6 +23,7 @@ footer {
     li {
       color: var(--navtxtcolor);
       margin: 7px 0;
+      max-width: 220px;
     }
   }
 }
