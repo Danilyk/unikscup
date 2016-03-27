@@ -23,3 +23,7 @@ input,textarea {
 ul.order.no-border {
   border-top: none;
 }
+
+textarea {
+  min-height: 100px;
+};
