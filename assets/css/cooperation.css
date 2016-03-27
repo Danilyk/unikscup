@@ -1,0 +1,20 @@
+.cooperation-content {
+  box-shadow: 0 1px 3px #59595D;
+  background-color: var(--white);
+  padding: 0 0 55px 0;
+  margin-bottom: 60px;
+
+  h3 {
+    font-weight: 400;
+    font-size: 22px;
+    color: #2F3034;
+    margin: 55px 125px 0 125px;
+  }
+}
+
+.area-pic {
+  background: url('../img/area-pic.png') center center no-repeat;
+  height: 257px;
+  width: 368px;
+  margin-left: 65px;
+}
