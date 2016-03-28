@@ -9,6 +9,7 @@
 @import "nextpagestyle.css";
 @import 'contacts.css';
 @import 'cooperation.css';
+@import 'products.css';
 
 @custom-media --desktop (width <= 1024px);
 @custom-media --tablet (width <= 768px);
