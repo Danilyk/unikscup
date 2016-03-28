@@ -5,6 +5,10 @@
   margin-right: auto;
 }
 
+.container-fluid {
+  max-width: 1440px;
+}
+
 * {
   font-family: var(--sans);
 }
