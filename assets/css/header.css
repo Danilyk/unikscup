@@ -1,5 +1,6 @@
 header {
   position: fixed;
+  transform: translateZ(0);
   top: 0;
   left: 0;
   right: 0;
@@ -93,10 +94,31 @@ header {
       }
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1060px) {
       & {
         ul.nav {
-          display: none;
+          transition: left 300ms 100ms;
+          position: fixed;
+          top: 120px;
+          left: -280px;
+          bottom: 0;
+          right: 0;
+          width: 280px;
+          padding-left: 0px;
+          height: 2000px;
+          background-color: #000;
+          overflow: hidden;
+          z-index: 999;
+
+          li {
+            display: block;
+            width: 100%;
+            text-align: left;
+          }
+
+          &.is-open {
+            left: 0;
+          }
         }
 
         .nav-button {
