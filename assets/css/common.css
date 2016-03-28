@@ -16,6 +16,13 @@
 body {
   background-color: var(--mainbgcolor);
   padding-top: 120px;
+
+  transition: 300ms 100ms;
+
+  &.is-open {
+    margin-left: 280px;
+    margin-right: -280px;
+  }
 }
 
 .page {
