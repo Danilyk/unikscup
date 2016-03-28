@@ -1,6 +1,5 @@
 header {
   position: fixed;
-  transform: translateZ(0);
   top: 0;
   left: 0;
   right: 0;
@@ -94,10 +93,10 @@ header {
       }
     }
 
-    @media only screen and (max-width: 1060px) {
+    @media only screen and (max-width: 900px) {
       & {
         ul.nav {
-          transition: left 300ms 100ms;
+          transition: left 150ms 100ms;
           position: fixed;
           top: 120px;
           left: -280px;
@@ -105,10 +104,10 @@ header {
           right: 0;
           width: 280px;
           padding-left: 0px;
-          height: 2000px;
           background-color: #000;
           overflow: hidden;
           z-index: 999;
+          flex-direction: column;
 
           li {
             display: block;
@@ -147,6 +146,15 @@ header {
             color: #666;
             background-color: rgba(100,100,100,0.1);
           }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1070px) {
+      & {
+        ul.nav li a {
+          font-size: 11px;
+          padding: 18px 10px;
         }
       }
     }

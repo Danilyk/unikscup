@@ -137,4 +137,11 @@ $(document).ready(function() {
   $('.prev-step-button').on('click', handleButtonClick);
 
   $("#phone").mask("(999) 999-9999");
+
+  $('.nav-button').on('click', function(event) {
+    event.preventDefault();
+
+    $('body').toggleClass('is-open');
+    $('ul.nav').toggleClass('is-open');
+  });
 });

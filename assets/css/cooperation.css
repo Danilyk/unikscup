@@ -19,8 +19,10 @@
 
   .area-pic {
     background: url('../img/area-pic.png') center center no-repeat;
-    height: 257px;
-    width: 368px;
-    margin-left: 65px;
+    min-height: 250px;
+    min-width: 250px;
+    background-size: contain;
+    max-height: 270px;
+    height: 100%;
   }
 }
