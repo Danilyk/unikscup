@@ -8,8 +8,9 @@
 
     .product-info {
       p {
-        font-size: 12px;
-        color: #828385;
+        font-size: 13px;
+        color: #a9aaaf;
+        font-weight: 600;
       }
       h3 {
         font-weight: 600;
@@ -17,7 +18,8 @@
     }
 
     .price-for-one {
-      border: 2px dotted #C7CCD0;
+      border: 2px dotted #DEDEDE;
+      margin: 15px 0;
 
       p {
         font-size: 32pt;
@@ -79,49 +81,37 @@
   .cup150 {
     background: url('../img/cup150.png') center center no-repeat;
     height: 161px;
-    width: 110px;
-    position: relative;
-    right: -30px;
+    width: 162px;
   }
 
   .cup250 {
     background: url('../img/cup250.png') center center no-repeat;
     height: 176px;
-    width: 125px;
-    position: relative;
-    right: -30px;
+    width: 162px;
   }
 
   .cup350 {
     background: url('../img/cup350.png') center center no-repeat;
     height: 187px;
-    width: 140px;
-    position: relative;
-    right: -15px;
+    width: 162px;
   }
 
   .cup450 {
     background: url('../img/cup450.png') center center no-repeat;
     height: 208px;
-    width: 152px;
-    position: relative;
-    right: -20px;
+    width: 162px;
   }
 
   .cup-cover80 {
     background: url('../img/cup-cover80.png') center center no-repeat;
     height: 102px;
-    width: 160px;
-    position: relative;
-    right: -20px;
+    width: 162px;
   }
 
   .cup-cover90 {
     background: url('../img/cup-cover90.png') center center no-repeat;
     height: 102px;
     width: 162px;
-    position: relative;
-    right: -20px;
   }
 
   .amount-info {
