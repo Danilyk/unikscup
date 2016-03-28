@@ -136,3 +136,7 @@
   @mixin icon-cup;
   background-position: -295px 0;
 }
+
+select {
+  overflow: hidden;
+}
