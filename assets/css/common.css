@@ -7,6 +7,11 @@
 
 .container-fluid {
   max-width: 1440px;
+
+  @media only screen and (max-width: 740px) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 
 * {
@@ -16,7 +21,7 @@
 body {
   background-color: var(--mainbgcolor);
   padding-top: 120px;
-
+  overflow-x: hidden;
   transition: 300ms 100ms;
 
   &.is-open {
