@@ -10,6 +10,7 @@
 @import 'contacts.css';
 @import 'cooperation.css';
 @import 'products.css';
+@import 'landing-page.css';
 
 @custom-media --desktop (width <= 1024px);
 @custom-media --tablet (width <= 768px);

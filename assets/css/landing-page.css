@@ -1,0 +1,82 @@
+.landing-page-page {
+
+  .manufacture{
+    background-color: var(--white);
+  }
+
+  .landingcup {
+    background: url('../img/landingcup.png') center center no-repeat;
+    height: 294px;
+    width: 210px;
+  }
+
+  .why-us1 {
+    background: url('../img/why-us1.png') center center no-repeat;
+    height: 216px;
+    width: 204px;
+  }
+
+  .rubblefix {
+    position: relative;
+    left: -60px;
+    bottom: -136px;
+    p {
+      color: white;
+      font-size: 46px;
+    }
+  }
+
+  .guarantees {
+    background: url('../img/guarantees.png') center center no-repeat;
+    height: 200px;
+    width: 205px
+  }
+
+  .car1 {
+    background: url('../img/car1.png') center center no-repeat;
+    height: 214px;
+    width: 325px
+  }
+
+  .unique {
+    background-color: var(--pricecolor);
+  }
+
+  .unique-cup {
+    background: url('../img/unique.png') center center no-repeat;
+    height: 442px;
+    width: 555px
+  }
+
+  .brand-cups {
+    background-color: #1473E6;
+  }
+
+  .brand-cup {
+    background: url('../img/brand-cups.png') center center no-repeat;
+    height: 465px;
+    width: 500px
+  }
+
+  .delivery1 {
+    background: url('../img/delivery1.png') center center no-repeat;
+    height: 200px;
+    width: 200px
+  }
+
+  .delivery2 {
+    background: url('../img/delivery2.png') center center no-repeat;
+    height: 200px;
+    width: 200px
+  }
+
+  .delivery3 {
+    background: url('../img/delivery3.png') center center no-repeat;
+    height: 200px;
+    width: 200px
+  }
+
+  .questions {
+    background-color: #358FD5;
+  }
+}

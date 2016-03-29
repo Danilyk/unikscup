@@ -1,127 +1,126 @@
-.page-products {
-  .product-item {
-    box-shadow: 0 1px 3px #59595D;
-    background-color: var(--white);
-    max-width: 530px;
-    padding: 25px 30px;
+
+.product-item {
+  box-shadow: 0 1px 3px #59595D;
+  background-color: var(--white);
+  max-width: 530px;
+  padding: 25px 30px;
+  margin: 15px 0;
+
+  .product-info {
+    p {
+      font-size: 13px;
+      color: #a9aaaf;
+      font-weight: 600;
+    }
+    h3 {
+      font-weight: 600;
+    }
+  }
+
+  .price-for-one {
+    border: 2px dotted #DEDEDE;
     margin: 15px 0;
 
-    .product-info {
-      p {
-        font-size: 13px;
-        color: #a9aaaf;
-        font-weight: 600;
-      }
-      h3 {
-        font-weight: 600;
-      }
-    }
-
-    .price-for-one {
-      border: 2px dotted #DEDEDE;
-      margin: 15px 0;
-
-      p {
-        font-size: 32pt;
-        color: var(--pricecolor);
-      }
-    }
-  }
-
-  .amount {
-    padding: 4px 45px;
-    border: var(--border) #C7CCD0;
-    border-radius: 18px;
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-
-    .plus-pic,
-    .minus-pic {
-      position: absolute;
-      top: 50%;
-      margin-top: -10px;
-    }
-
-    .plus-pic {
-      right: 7px;
-    }
-
-    .minus-pic {
-      left: 10px;
-    }
-  }
-
-  .minus-link{
-    background: url('../img/plus-minus.png') center center no-repeat;
-    height: 10px;
-    width: 8px;
-    display: inline-block;
-    background-position: 0 -2px;
-  }
-
-  .plus-link{
-    background: url('../img/plus-minus.png') center center no-repeat;
-    height: 13px;
-    width: 13px;
-    display: inline-block;
-    background-position: -13px 0;
-  }
-
-  .amount-block {
-    margin: 15px 0 5px;
     p {
-      font-size: 9px;
-      margin: 0 0 5px 0;
-      padding: 0 0 5px 5px;
-      margin-right: 10px;
+      font-size: 32pt;
+      color: var(--pricecolor);
     }
   }
+}
 
-  .cup150 {
-    background: url('../img/cup150.png') center center no-repeat;
-    height: 161px;
-    width: 162px;
+.amount {
+  padding: 4px 45px;
+  border: var(--border) #C7CCD0;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+
+  .plus-pic,
+  .minus-pic {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
   }
 
-  .cup250 {
-    background: url('../img/cup250.png') center center no-repeat;
-    height: 176px;
-    width: 162px;
+  .plus-pic {
+    right: 7px;
   }
 
-  .cup350 {
-    background: url('../img/cup350.png') center center no-repeat;
-    height: 187px;
-    width: 162px;
+  .minus-pic {
+    left: 10px;
   }
+}
 
-  .cup450 {
-    background: url('../img/cup450.png') center center no-repeat;
-    height: 208px;
-    width: 162px;
-  }
+.minus-link{
+  background: url('../img/plus-minus.png') center center no-repeat;
+  height: 10px;
+  width: 8px;
+  display: inline-block;
+  background-position: 0 -2px;
+}
 
-  .cup-cover80 {
-    background: url('../img/cup-cover80.png') center center no-repeat;
-    height: 102px;
-    width: 162px;
-  }
+.plus-link{
+  background: url('../img/plus-minus.png') center center no-repeat;
+  height: 13px;
+  width: 13px;
+  display: inline-block;
+  background-position: -13px 0;
+}
 
-  .cup-cover90 {
-    background: url('../img/cup-cover90.png') center center no-repeat;
-    height: 102px;
-    width: 162px;
+.amount-block {
+  margin: 15px 0 5px;
+  p {
+    font-size: 9px;
+    margin: 0 0 5px 0;
+    padding: 0 0 5px 5px;
+    margin-right: 10px;
   }
+}
 
-  .amount-info {
-    font-style: italic;
-    font-size: 12px;
-    min-width: 200px;
-  }
+.cup150 {
+  background: url('../img/cup150.png') center center no-repeat;
+  height: 161px;
+  width: 162px;
+}
 
-  .button-checkout {
-    margin-top: 15px;
-    padding: 8px 5px;
-  }
+.cup250 {
+  background: url('../img/cup250.png') center center no-repeat;
+  height: 176px;
+  width: 162px;
+}
+
+.cup350 {
+  background: url('../img/cup350.png') center center no-repeat;
+  height: 187px;
+  width: 162px;
+}
+
+.cup450 {
+  background: url('../img/cup450.png') center center no-repeat;
+  height: 208px;
+  width: 162px;
+}
+
+.cup-cover80 {
+  background: url('../img/cup-cover80.png') center center no-repeat;
+  height: 102px;
+  width: 162px;
+}
+
+.cup-cover90 {
+  background: url('../img/cup-cover90.png') center center no-repeat;
+  height: 102px;
+  width: 162px;
+}
+
+.amount-info {
+  font-style: italic;
+  font-size: 12px;
+  min-width: 200px;
+}
+
+.button-checkout {
+  margin-top: 15px;
+  padding: 8px 5px;
 }
