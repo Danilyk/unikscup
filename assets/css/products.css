@@ -15,6 +15,20 @@
     h3 {
       font-weight: 600;
     }
+    h2 {
+      color: var(--pricecolor);
+      font-weight: 600;
+      font-size: 32px;
+      margin-bottom: 0;
+    }
+    span {
+      color: #000;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    &.soon {
+      margin-bottom: 25px;
+    }
   }
 
   .price-for-one {
@@ -117,10 +131,4 @@
 .amount-info {
   font-style: italic;
   font-size: 12px;
-  min-width: 200px;
-}
-
-.button-checkout {
-  margin-top: 15px;
-  padding: 8px 5px;
 }

@@ -2,6 +2,20 @@
 
   .manufacture{
     background-color: var(--white);
+    padding: 60px 75px;
+    margin: 10px auto;
+
+    h2 {
+      font-size: 42px;
+      font-weight: 300;
+      margin-top: 0;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #828385;
+      margin-bottom: 60px;
+    }
   }
 
   .landingcup {
@@ -10,9 +24,22 @@
     width: 210px;
   }
 
+  .why-us {
+    margin-bottom: 65px;
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      max-width: 255px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #828385;
+    }
+  }
+
   .why-us1 {
     background: url('../img/why-us1.png') center center no-repeat;
-    height: 216px;
+    height: 215px;
     width: 204px;
   }
 
@@ -28,34 +55,80 @@
 
   .guarantees {
     background: url('../img/guarantees.png') center center no-repeat;
-    height: 200px;
+    height: 215px;
     width: 205px
   }
 
   .car1 {
     background: url('../img/car1.png') center center no-repeat;
-    height: 214px;
+    height: 215px;
     width: 325px
   }
 
   .unique {
     background-color: var(--pricecolor);
-  }
+    padding: 45px 110px 25px 140px;
 
+    h2 {
+      font-size: 54px;
+      font-weight: 900;
+      color: #000;
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 300;
+      color: #fff;
+    }
+  }
+}
   .unique-cup {
     background: url('../img/unique.png') center center no-repeat;
-    height: 442px;
+    height: 445px;
     width: 555px
   }
 
   .brand-cups {
+    margin-top: 35px;
+    padding:25px 0 15px 110px;
     background-color: #1473E6;
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 54px;
+      font-weight: 900;
+      color: #000;
+      &:last-of-type {
+        color: #fff;
+        margin-bottom: 0;
+      }
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 300;
+      color: #fff;
+    }
   }
 
   .brand-cup {
     background: url('../img/brand-cups.png') center center no-repeat;
     height: 465px;
     width: 500px
+  }
+
+  .delivery {
+    margin-bottom: 75px;
+    h2 {
+      font-weight: 600;
+      max-width: 255px;
+    }
+    p {
+      max-width: 255px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #828385;
+    }
   }
 
   .delivery1 {
@@ -78,5 +151,51 @@
 
   .questions {
     background-color: #358FD5;
+    padding-left: 110px;
+    h2 {
+      color: #fff;
+    }
+    p {
+      color: #000;
+      margin-bottom: 35px;
+      max-width: 330px;
+      font-size: 15px;
+      font-weight: 500;
+    }
   }
-}
+
+  .landingcup150{
+    background: url('../img/landingcup150.png') center center no-repeat;
+    height: 140px;
+    width: 180px
+  }
+
+  .landingcup250{
+    background: url('../img/landingcup250.png') center center no-repeat;
+    height: 140px;
+    width: 180px
+  }
+
+  .landingcup350{
+    background: url('../img/landingcup350.png') center center no-repeat;
+    height: 140px;
+    width: 180px
+  }
+
+  .landingcup450{
+    background: url('../img/landingcup450.png') center center no-repeat;
+    height: 140px;
+    width: 180px
+  }
+
+  .landing2layerscup350{
+    background: url('../img/landing2layerscup350.png') center center no-repeat;
+    height: 140px;
+    width: 180px
+  }
+
+  .landing2layerscup450{
+    background: url('../img/landing2layerscup450.png') center center no-repeat;
+    height: 140px;
+    width: 180px
+  }
