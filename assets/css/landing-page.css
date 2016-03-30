@@ -1,22 +1,22 @@
-.landing-page-page {
 
-  .manufacture{
-    background-color: var(--white);
-    padding: 60px 75px;
-    margin: 10px auto;
 
-    h2 {
-      font-size: 42px;
-      font-weight: 300;
-      margin-top: 0;
-    }
-    p {
-      font-size: 16px;
-      font-weight: 500;
-      color: #828385;
-      margin-bottom: 60px;
-    }
+.manufacture{
+  background-color: var(--white);
+  padding: 60px 75px;
+  margin: 10px auto;
+
+  h2 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-top: 0;
   }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #828385;
+    margin-bottom: 60px;
+  }
+}
 
   .landingcup {
     background: url('../img/landingcup.png') center center no-repeat;
@@ -43,159 +43,196 @@
     width: 204px;
   }
 
-  .rubblefix {
-    position: relative;
-    left: -60px;
-    bottom: -136px;
-    p {
-      color: white;
-      font-size: 46px;
-    }
-  }
 
-  .guarantees {
-    background: url('../img/guarantees.png') center center no-repeat;
-    height: 215px;
-    width: 205px
-  }
+.landingcup {
+  background: url('../img/landingcup.png') center center no-repeat;
+  height: 294px;
+  width: 210px;
+}
 
-  .car1 {
-    background: url('../img/car1.png') center center no-repeat;
-    height: 215px;
-    width: 325px
-  }
 
-  .unique {
-    background-color: var(--pricecolor);
-    padding: 45px 110px 25px 140px;
+.guarantees {
+  background: url('../img/guarantees.png') center center no-repeat;
+  height: 215px;
+  width: 205px
+}
 
-    h2 {
-      font-size: 54px;
-      font-weight: 900;
-      color: #000;
-    }
+.car1 {
+  background: url('../img/car1.png') center center no-repeat;
+  height: 215px;
+  width: 325px
+}
 
-    p {
-      font-size: 22px;
-      font-weight: 300;
-      color: #fff;
-    }
+.why-us1 {
+  background: url('../img/why-us1.png') center center no-repeat;
+  height: 216px;
+  width: 204px;
+}
+
+.rubblefix {
+  position: relative;
+  left: -60px;
+  bottom: -136px;
+  p {
+    color: white;
+    font-size: 46px;
   }
 }
-  .unique-cup {
-    background: url('../img/unique.png') center center no-repeat;
-    height: 445px;
-    width: 555px
+
+
+.landing-page-unique {
+  background-color: var(--pricecolor);
+  padding: 45px 110px 25px 140px;
+
+  h2 {
+    font-size: 54px;
+    font-weight: 900;
+    color: #000;
   }
 
-  .brand-cups {
-    margin-top: 35px;
-    padding:25px 0 15px 110px;
-    background-color: #1473E6;
+  p {
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+  }
+}
 
-    h2 {
-      margin-bottom: 15px;
-      font-size: 54px;
-      font-weight: 900;
-      color: #000;
-      &:last-of-type {
-        color: #fff;
-        margin-bottom: 0;
-      }
-    }
+.unique-cup {
+  background: url('../img/unique.png') center center no-repeat;
+  height: 445px;
+  width: 555px
+}
 
-    p {
-      font-size: 22px;
-      font-weight: 300;
+.landing-page-brand-cups {
+  margin-top: 35px;
+  padding:25px 0 15px 110px;
+  background-color: #1473E6;
+
+  h2 {
+    margin-bottom: 15px;
+    font-size: 54px;
+    font-weight: 900;
+    color: #000;
+    &:last-of-type {
       color: #fff;
+      margin-bottom: 0;
     }
   }
 
-  .brand-cup {
-    background: url('../img/brand-cups.png') center center no-repeat;
-    height: 465px;
-    width: 500px
+  p {
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
   }
+}
 
-  .delivery {
-    margin-bottom: 75px;
-    h2 {
-      font-weight: 600;
-      max-width: 255px;
-    }
-    p {
-      max-width: 255px;
-      font-size: 14px;
-      font-weight: 500;
-      color: #828385;
-    }
-  }
+.guarantees {
+  background: url('../img/guarantees.png') center center no-repeat;
+  height: 200px;
+  width: 205px
+}
 
-  .delivery1 {
-    background: url('../img/delivery1.png') center center no-repeat;
-    height: 200px;
-    width: 200px
-  }
+.car1 {
+  background: url('../img/car1.png') center center no-repeat;
+  height: 214px;
+  width: 325px
+}
 
-  .delivery2 {
-    background: url('../img/delivery2.png') center center no-repeat;
-    height: 200px;
-    width: 200px
-  }
+.unique-cup {
+  background: url('../img/unique.png') center center no-repeat;
+  height: 442px;
+  width: 555px
+}
 
-  .delivery3 {
-    background: url('../img/delivery3.png') center center no-repeat;
-    height: 200px;
-    width: 200px
-  }
 
-  .questions {
-    background-color: #358FD5;
-    padding-left: 110px;
-    h2 {
-      color: #fff;
-    }
-    p {
-      color: #000;
-      margin-bottom: 35px;
-      max-width: 330px;
-      font-size: 15px;
-      font-weight: 500;
-    }
-  }
+.brand-cup {
+  background: url('../img/brand-cups.png') center center no-repeat;
+  height: 465px;
+  width: 500px
+}
 
-  .landingcup150{
-    background: url('../img/landingcup150.png') center center no-repeat;
-    height: 140px;
-    width: 180px
-  }
 
-  .landingcup250{
-    background: url('../img/landingcup250.png') center center no-repeat;
-    height: 140px;
-    width: 180px
+.delivery {
+  margin-bottom: 75px;
+  h2 {
+    font-weight: 600;
+    max-width: 255px;
   }
+  p {
+    max-width: 255px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #828385;
+  }
+}
 
-  .landingcup350{
-    background: url('../img/landingcup350.png') center center no-repeat;
-    height: 140px;
-    width: 180px
-  }
+.delivery1 {
+  background: url('../img/delivery1.png') center center no-repeat;
+  height: 200px;
+  width: 200px
+}
 
-  .landingcup450{
-    background: url('../img/landingcup450.png') center center no-repeat;
-    height: 140px;
-    width: 180px
-  }
 
-  .landing2layerscup350{
-    background: url('../img/landing2layerscup350.png') center center no-repeat;
-    height: 140px;
-    width: 180px
-  }
+.delivery2 {
+  background: url('../img/delivery2.png') center center no-repeat;
+  height: 200px;
+  width: 200px
+}
 
-  .landing2layerscup450{
-    background: url('../img/landing2layerscup450.png') center center no-repeat;
-    height: 140px;
-    width: 180px
+.delivery3 {
+  background: url('../img/delivery3.png') center center no-repeat;
+  height: 200px;
+  width: 200px
+}
+
+
+.landing-page-questions {
+  background-color: #358FD5;
+  padding-left: 110px;
+  h2 {
+    color: #fff;
   }
+  p {
+    color: #000;
+    margin-bottom: 35px;
+    max-width: 330px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+.landingcup150{
+  background: url('../img/landingcup150.png') center center no-repeat;
+  height: 140px;
+  width: 180px
+}
+
+.landingcup250{
+  background: url('../img/landingcup250.png') center center no-repeat;
+  height: 140px;
+  width: 180px
+}
+
+.landingcup350{
+  background: url('../img/landingcup350.png') center center no-repeat;
+  height: 140px;
+  width: 180px
+}
+
+.landingcup450{
+  background: url('../img/landingcup450.png') center center no-repeat;
+  height: 140px;
+  width: 180px
+}
+
+.landing2layerscup350{
+  background: url('../img/landing2layerscup350.png') center center no-repeat;
+  height: 140px;
+  width: 180px
+}
+
+.landing2layerscup450{
+  background: url('../img/landing2layerscup450.png') center center no-repeat;
+  height: 140px;
+  width: 180px
+}
