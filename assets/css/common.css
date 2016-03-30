@@ -92,6 +92,9 @@ h1 {
   background-color: #1473E6;
 }
 
+.bg-questions {
+  background-color: #358FD5;
+}
 /* Grid fixes */
 @media only screen and (min-width: 64em) {
   .container {
