@@ -24,10 +24,39 @@
       color: var(--black);
     }
   }
+  .map-pin-pic {
+    height: 40px;
+    width: 40px;
+    background: url('../img/icon_location-circle.png') center center no-repeat;
+    background-size: 40px 40px;
+  }
 
-  .list-item-1::before {
-      left: -55px;
-      top: 25px;
+  .phone-pic {
+    height: 40px;
+    width: 40px;
+    background: url('../img/icon_phone-circle.png') center center no-repeat;
+    background-size: 40px 40px;
+  }
+
+  .clock-pic {
+    height: 40px;
+    width: 40px;
+    background: url('../img/icon_watch-circle.png') center center no-repeat;
+    background-size: 40px 40px;
+  }
+
+  .list-pic {
+    height: 40px;
+    width: 40px;
+    background: url('../img/icon_document-circle (1).png') center center no-repeat;
+    background-size: 40px 40px;
+  }
+
+  .card-pic {
+    height: 40px;
+    width: 40px;
+    background: url('../img/icon_card-circle.png') center center no-repeat;
+    background-size: 40px 40px;
   }
 
   img.map-pic {
