@@ -26,7 +26,7 @@ gulp.task('styles', function () {
         require('postcss-custom-media'),
         require('postcss-media-minmax'),
         require('postcss-will-change'),
-        require('autoprefixer')({browsers: ['last 2 versions']}),
+        require('autoprefixer')({add: false, browsers: ['> 5%']}),
         require('postcss-css-variables'),
     ];
 

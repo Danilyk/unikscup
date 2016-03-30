@@ -1,12 +1,45 @@
 extends ./layout.jade 
 block content
-<<<<<<< HEAD
-  .container-fluid.page.page-products
-=======
-  .container-fluid.page
->>>>>>> ca560e5acfa9f3bcb114dcfb4ee8a78ec70fde7a
+  .container-fluid.page.landing-page-page
+    .col-xs.manufacture
+      .row
+        .col-xs
+          h1 Производство бумажных стаканов для горячих напитков
+          p Unikscup ­ компания полного производственного цикла. Мы изготавливаем однослойные и двухслойные бумажные стаканы и пластиковые крышки для горячих напитков.
+          .row
+            a(href="#").button-checkout Узнать подробнее
+            a(href="#").button-checkout Скачать каталог
+        .col-xs.row.center-xs  
+          .landingcup
+    .col-xs.why-us
+      .row.center-xs
+        h1 Почему мы ?
+      .row.around-xs
+        .col-xs.row.center-xs
+          .why-us1
+          .rubblefix
+            p &#x20bd;
+          h2 Выгодная цена
+          p Покупая у нас - вы покупаете у производителя, а это самый выгодный вариант.
+        .col-xs.row.center-xs
+          .guarantees
+          h2 Гарантия качества
+          p Наша продукция сертифицирована и проходит автоматическую проверку на предмет протечек или брака.
+        .col-xs.row.center-xs
+          .car1
+          h2 Оперативность доставки
+          p Бесплатно довезем до указанного адреса по Новосибирску, Бердску и г. Обь от 1 коробки.
+  .bg-unique
+    .container-fluid.page.landing-page-unique
+      .row
+        .col-xs
+          .unique-cup
+        .col-xs
+          h1 Уникальная разработка
+          p Наш стакан объемом 150 мл разработан специально для использования в европейских вендинговых автоматах.
+  .container-fluid.page.landing-page-page        
     .row.center-xs
-      h1 БУМАЖНЫЕ СТАКАНЫ
+      h1 Наша продукция
     .row.around-xs  
       .product-item
         .row
@@ -189,4 +222,48 @@ block content
               .plus-pic
                 a.plus-link(href="#")
           .col-xs.center-xs      
-            a.button-checkout Добавить&nbsp;в&nbsp;корзину           
+            a.button-checkout Добавить&nbsp;в&nbsp;корзину      
+  .bg-blue
+    .container-fluid.page.landing-page-brand-cups
+      .row
+        .col-xs
+          h1 Брендированные стаканы
+          p Мы можем изготовить стаканы с вашим дизайном или нанести логотип с помощью флексографической печати
+          h1 Скоро!
+          p ожидается в первой половине 2016
+        .col-xs
+          .brand-cup
+  .container-fluid.page.landing-page-delivery      
+    .col-xs.delivery
+      .row.center-xs
+        h1 Получить наши стаканы невероятно просто
+      .row.around-xs
+        .col-xs.row.center-xs
+          .delivery1
+          h2 Выберите нужные стаканы
+          p Добавьте товары в корзину и оформите заказ.
+        .col-xs.row.center-xs
+          .delivery2
+          h2 Наш менеджер свяжется с вами
+          p Для согласования времени и места доставки, а также способа оплаты.
+        .col-xs.row.center-xs
+          .delivery3
+          h2 Курьер доставит ваш заказ
+          p Мы предлагам доставку на следующий день после подтверждения заказа.     
+  .questions          
+    .container-fluid.page.landing-page-questions        
+      .row.middle-xs
+        .col-xs
+          h2 Остались вопросы?
+          p Закажите обратный звонок и наш менеджер свяжется с вами в ближайшее время.
+        .col-xs
+          .row.middle-xs
+            .col-xs
+              form
+                input(required=true type="text" placeholder="Имя" id="name")
+            .col-xs  
+              form  
+                input(required=true type="text" placeholder="Номер телефона" id="phone-number")
+            .col-xs  
+              a.order-button.orange Позвоните мне  
+      

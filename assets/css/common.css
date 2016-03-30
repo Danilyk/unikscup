@@ -84,6 +84,14 @@ h1 {
   flex-grow: 0;
 }
 
+.bg-unique {
+  background-color: var(--pricecolor);
+}
+
+.bg-blue {
+  background-color: #1473E6;
+}
+
 /* Grid fixes */
 @media only screen and (min-width: 64em) {
   .container {
