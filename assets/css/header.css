@@ -23,7 +23,7 @@ header {
     }
 
     p {
-      font-size: 10px;
+      font-size: 11px;
 
       &.phone {
         font-size: 18px;
@@ -35,7 +35,7 @@ header {
       display: block;
       text-indent: -9999px;
       background: url('../img/logo.png') center center no-repeat;
-      width: 160px;
+      width: 182px;
       height: 36px;
     }
 
@@ -60,7 +60,7 @@ header {
         a.logo {
           width: 107px;
           height: 24px;
-          background-size: cover;
+          background-size: contain;
         }
       }
     }
@@ -85,10 +85,31 @@ header {
       }
     }
 
+    .counter {
+      display: none;
+    }
+
     @media only screen and (max-width: 500px) {
       & {
+        span.icon-cart {
+          position: relative;
+        }
+
         span.icon-cart p {
           display: none;
+        }
+
+        span.icon-cart .counter {
+          border-radius: 50%;
+          text-align: center;
+          display: block;
+          width: 17px;
+          height: 17px;
+          font-size: 12px;
+          background-color: var(--pricecolor);
+          color: #fff;
+          position: absolute;
+          left: 16px;
         }
       }
     }

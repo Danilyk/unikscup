@@ -16,6 +16,24 @@
     color: #828385;
     margin-bottom: 60px;
   }
+
+  @media screen and (max-width: 1140px) {
+    & {
+      padding: 12px 35px;
+    }
+
+    .image-cup  {
+      order: -1;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .button-checkout:last-child {
+      margin-top: 10px;
+    }
+  }
 }
 
   .landingcup {
@@ -85,9 +103,10 @@
   padding: 45px 110px 25px 140px;
 
   h2 {
-    font-size: 54px;
+    font-size: 60px;
     font-weight: 900;
     color: #000;
+    line-height: 1.2;
   }
 
   p {
@@ -95,14 +114,30 @@
     font-weight: 300;
     color: #fff;
   }
-}
 
-.unique-cup {
-  background: url('../img/unique.png') center center no-repeat;
-  height: 445px;
-  width: 555px
-}
+  .unique-cup {
+    background: url('../img/unique.png') center center no-repeat;
+    height: 445px;
+    width: 555px;
+    background-size: contain;
+  }
 
+
+  @media screen and (max-width: 1140px) {
+    & {
+      padding: 10px 0;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .unique-cup {
+      height: 250px;
+      width: 280px;
+    }
+  }
+}
 .landing-page-brand-cups {
   margin-top: 35px;
   padding:25px 0 15px 110px;
@@ -123,6 +158,21 @@
     font-size: 22px;
     font-weight: 300;
     color: #fff;
+  }
+
+  @media screen and (max-width: 1140px) {
+    & {
+      padding: 10px 0;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .unique-cup {
+      height: 250px;
+      width: 280px;
+    }
   }
 }
 
@@ -148,7 +198,8 @@
 .brand-cup {
   background: url('../img/brand-cups.png') center center no-repeat;
   height: 465px;
-  width: 500px
+  width: 500px;
+  background-size: contain;
 }
 
 
@@ -198,6 +249,15 @@
     max-width: 330px;
     font-size: 15px;
     font-weight: 500;
+  }
+  input {
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 1140px) {
+    & {
+      padding: 10px 0;
+    }
   }
 }
 

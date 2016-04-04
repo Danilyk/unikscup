@@ -9,7 +9,7 @@ header
             p г.Новосибирск,
             p ул.Приграничная
             p.top-offset-5
-              a(href="mailto:info@unikscup.ru") info@unikscup.ru
+              a(href="mailto:info@unikscup.ru"): strong info@unikscup.ru
           .center-xs      
             p.phone +7&nbsp;(383)&nbsp;303&nbsp;45&nbsp;50
             a.order-button(href="#") ЗАКАЗАТЬ&nbsp;ОБРАТНЫЙ&nbsp;ЗВОНОК
@@ -29,5 +29,30 @@ header
             a(href="#")
               span.icon.icon-cart
                 p В&nbsp;корзине&nbsp;2&nbsp;товара
+                .counter 2
           span
             a.button-checkout(href="#") оформить заказ
+      .cart-quick-view
+        .row.bottom-xs.start-xs
+          .col-xs
+            h3 Ваш заказ   
+        ul.order
+          li.row
+            .col-xs.row.middle-xs.start-xs
+              span.icon-cup150
+              span.info
+                h4 Стакан 150мл, белый
+            .col-xs.row.middle-xs.center-xs
+              .amount-block.start-xs
+                p Количество
+                span.amount 1100
+                  .minus-pic
+                    a.minus-link(href="#")
+                  .plus-pic
+                    a.plus-link(href="#")
+            .col-xs.row.middle-xs.end-xs        
+              .cost-block.start-xs
+                p Стоимость
+                span.cost 1320&nbsp;&#x20bd;
+            .cross-block
+              a.cross(href="#")      

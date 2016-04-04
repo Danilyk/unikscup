@@ -1,19 +1,19 @@
 extends ./layout.jade 
 block content
-  .container-fluid.page.landing-page-page
+  .container-fluid.landing-page-page
     .col-xs.manufacture
       .row
         .col-xs
-          h2 Производство&nbsp;бумажных&nbsp;стаканов для горячих напитков
+          h2 Производство бумажных стаканов для горячих напитков
           p Unikscup ­ компания полного производственного цикла. Мы изготавливаем однослойные и двухслойные бумажные стаканы и пластиковые крышки для горячих напитков.
-          .row
-            .col-xs.start-xs
-              a(href="#").button-checkout Узнать подробнее
-            .col-xs-4 
-              a(href="#").button-checkout Скачать каталог
+        .col-xs.row.center-xs.image-cup 
+          .landingcup      
+      .row
+        .col-xs
+          a(href="#").button-checkout Узнать&nbsp;подробнее
+          span &nbsp; 
+          a(href="#").button-checkout Скачать&nbsp;каталог
             .col-xs 
-        .col-xs.row.center-xs  
-          .landingcup
     .col-xs.why-us
       .row.center-xs
         h1 Почему мы ?
@@ -33,19 +33,19 @@ block content
           .car1
           h2 Оперативность доставки
           p Бесплатно довезем до указанного адреса по Новосибирску, Бердску и&nbsp;г.Обь от 1 коробки.
-  .bg-unique
+  .bg-unique.container-fluid
     .container-fluid.page.landing-page-unique
       .row
-        .col-xs
+        .col-xs.row.center-xs
           .unique-cup
-        .col-xs.center-xs
+        .col-xs.end-xs
           h2 Уникальная разработка
           p Наш стакан объемом 150 мл разработан специально для использования в европейских вендинговых автоматах.
   .container-fluid.page.landing-page-page        
     .row.center-xs
       h1 Наша продукция
     .row.around-xs  
-      .product-item
+      .product-item.eurovending
         .row
           .col-xs.no-grow.row.center-xs.middle-xs
             .landingcup150
@@ -253,7 +253,7 @@ block content
                 a.plus-link(href="#")
           .col-xs.center-xs      
             a.button-checkout Добавить&nbsp;в&nbsp;корзину      
-  .bg-blue
+  .bg-blue.container-fluid
     .container-fluid.page.landing-page-brand-cups
       .row
         .col-xs
@@ -261,7 +261,7 @@ block content
           p Мы можем изготовить стаканы с вашим дизайном или&nbsp;нанести логотип с помощью флексографической&nbsp;печати
           h2 Скоро!
           p ожидается в первой половине 2016
-        .col-xs
+        .col-xs.row.center-xs
           .brand-cup
   .container-fluid.page.landing-page-delivery      
     .col-xs.delivery
@@ -280,21 +280,19 @@ block content
           .delivery3
           h2 Курьер доставит ваш заказ
           p Мы предлагам доставку на следующий день после подтверждения заказа.     
-  .bg-questions          
+  .bg-questions.container-fluid          
     .container-fluid.page.landing-page-questions        
       .row.middle-xs
         .col-xs
           h2 Остались вопросы?
           p Закажите обратный звонок и наш менеджер свяжется с вами в ближайшее время.
         .col-xs
-          .row.middle-xs
+          form.row.middle-xs
             .col-xs
-              form
-                input(required=true type="text" placeholder="Имя" id="name")
+              input(required=true type="text" placeholder="Имя" id="name")
+            .col-xs          
+              input(required=true type="text" placeholder="Номер телефона" id="phone-number")
             .col-xs  
-              form  
-                input(required=true type="text" placeholder="Номер телефона" id="phone-number")
-            .col-xs  
-              a.order-button.orange Позвоните мне  
+              a.order-button.orange Позвоните&nbsp;мне  
 
       

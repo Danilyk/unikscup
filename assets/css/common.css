@@ -7,6 +7,7 @@
 
 .container-fluid {
   max-width: 1440px;
+  box-sizing: border-box;
 
   @media only screen and (max-width: 740px) {
     padding-right: 1rem;
@@ -32,6 +33,7 @@ body {
 
 .page {
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 .hidden {

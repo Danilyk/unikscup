@@ -24,6 +24,21 @@ footer {
       color: var(--navtxtcolor);
       margin: 7px 0;
       max-width: 220px;
+      &.skype-icon {
+        background: url('../img/icon_skype.png') 0 center no-repeat;
+        background-size: 20px 20px;
+        padding-left: 25px;
+      }
+      &.phone-icon {
+        background: url('../img/icon_phone.png') 0 center no-repeat;
+        background-size: 20px 20px;
+        padding-left: 25px;
+      }
+      &.mail-icon {
+        background: url('../img/icon_envelope.png') 0 center no-repeat;
+        background-size: 20px 20px;
+        padding-left: 25px;
+      }
     }
   }
 }

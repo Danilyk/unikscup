@@ -50,6 +50,7 @@
       border-radius: 5px;
       margin: 15px 0;
       font-size: 14px;
+      padding: 10px 13px;
     }
 }
 
@@ -86,6 +87,11 @@
     background-position: 0;
     width: auto;
     margin-right: 20px;
+    background-size: 24px 24px;
+
+    p {
+      font-size: 15px;
+    }
   }
 }
 
@@ -138,8 +144,47 @@
 }
 
 select {
-  border: 1px solid #C7CCD0;
-  padding: 4px 35px;
+  border: 2px solid #C7CCD0;
+  padding: 3px 35px;
   border-radius: 18px;
   outline-style: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  appearance: none;
+}
+
+.eurovending {
+  position: relative;
+}
+
+.eurovending:after {
+  content: "евровендинг";
+	border-bottom: 40px solid #8DC2B8;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	height: 0;
+	width: 100px;
+  position: absolute;
+  left: -60px;
+  top: 10px;
+  color: white;
+  line-height: 2.5;
+  transform: rotate(-45deg);
+}
+
+.eurovending:before {
+  content: "";
+	border-bottom: 40px solid var(--pricecolor);
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	height: 0;
+	width: 100px;
+  position: absolute;
+  left: -32px;
+  top: 38px;
+  color: white;
+  line-height: 2.5;
+  transform: rotate(135deg);
+  z-index: -1;
 }
