@@ -26,16 +26,18 @@ header
                 = title  
         .row.end-xs.middle-xs
           span
-            a(href="#")
+            a.toggle-cart(href="#")
               span.icon.icon-cart
                 p В&nbsp;корзине&nbsp;2&nbsp;товара
                 .counter 2
           span
             a.button-checkout(href="#") оформить заказ
       .cart-quick-view
-        .row.bottom-xs.start-xs
+        .row.around-xs.middle-xs
           .col-xs
-            h3 Ваш заказ   
+            h3 Корзина   
+          .col-xs.end-xs
+            p.text-price 4400&nbsp;&#x20bd;
         ul.order
           li.row
             .col-xs.row.middle-xs.start-xs
@@ -53,6 +55,21 @@ header
             .col-xs.row.middle-xs.end-xs        
               .cost-block.start-xs
                 p Стоимость
-                span.cost 1320&nbsp;&#x20bd;
-            .cross-block
-              a.cross(href="#")      
+                span.cost 1320&nbsp;&#x20bd; 
+          li.row
+            .col-xs.row.middle-xs.start-xs
+              span.icon-cup150
+              span.info
+                h4 Стакан 150мл, белый
+            .col-xs.row.middle-xs.center-xs
+              .amount-block.start-xs
+                p Количество
+                span.amount 1100
+                  .minus-pic
+                    a.minus-link(href="#")
+                  .plus-pic
+                    a.plus-link(href="#")
+            .col-xs.row.middle-xs.end-xs        
+              .cost-block.start-xs
+                p Стоимость
+                span.cost 1320&nbsp;&#x20bd;         

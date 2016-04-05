@@ -144,4 +144,11 @@ $(document).ready(function() {
     $('body').toggleClass('is-open');
     $('ul.nav').toggleClass('is-open');
   });
+
+  $('a.toggle-cart').on('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    $('.cart-quick-view').toggleClass('opened');
+  });
 });
