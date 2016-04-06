@@ -1,6 +1,6 @@
 extends ./layout.jade 
 block content
-  .container-fluid.landing-page-page
+  .container-fluid.landing-page-banner
     .col-xs.manufacture
       .row
         .col-xs
@@ -11,12 +11,12 @@ block content
       .row
         .col-xs.catalog
           a(href="#").button-checkout Узнать&nbsp;подробнее
-          span &nbsp; 
+          span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
           a(href="#").button-checkout Скачать&nbsp;каталог
             .col-xs 
     .col-xs.why-us
       .row.center-xs
-        h1 Почему мы ?
+        h1 Почему мы?
       .row.around-xs
         .col-xs.row.center-xs
           .why-us1
@@ -41,10 +41,10 @@ block content
         .col-xs.end-xs
           h2 Уникальная разработка
           p Наш стакан объемом 150 мл разработан специально для использования в европейских вендинговых автоматах.
-  .container-fluid.page.landing-page-page        
+  .container-fluid   
     .row.center-xs
       h1 Наша продукция
-    .row.around-xs  
+    .row.between-xs  
       .product-item.eurovending
         .row
           .col-xs.no-grow.row.center-xs.middle-xs
@@ -267,6 +267,7 @@ block content
     .col-xs.delivery
       .row.center-xs
         h1 Получить наши стаканы невероятно просто
+      br  
       .row.around-xs
         .col-xs.row.center-xs
           .delivery1
@@ -281,9 +282,9 @@ block content
           h2 Курьер доставит ваш заказ
           p Мы предлагам доставку на следующий день после подтверждения заказа.     
   .bg-questions.container-fluid          
-    .container-fluid.page.landing-page-questions        
+    .landing-page-questions        
       .row.middle-xs
-        .col-xs
+        .col-xs.no-grow
           h2 Остались вопросы?
           p Закажите обратный звонок и наш менеджер свяжется с вами в ближайшее время.
         .col-xs
@@ -292,7 +293,7 @@ block content
               input(required=true type="text" placeholder="Имя" id="name")
             .col-xs          
               input(required=true type="text" placeholder="Номер телефона" id="phone-number")
-            .col-xs  
+            .col-xs.no-grow  
               a.order-button.orange Позвоните&nbsp;мне  
 
       

@@ -10,6 +10,7 @@
   border: var(--border);
   border-color: var(--orange);
   transition: color 0.3s;
+  letter-spacing: 0.3px;
 
   &:hover {
     color: var(--orange);
@@ -59,7 +60,7 @@
   background: var(--lightgreen);
   font-family: var(--sans);
   font-size: 16px;
-  padding: 8px 20px;
+  padding: 6px 21px 9px;
   color: var(--white);
   border-radius: 5px;
   border: 2px solid var(--lightgreen);
@@ -86,11 +87,14 @@
     padding-left: 30px;
     background-position: 0;
     width: auto;
-    margin-right: 20px;
+    margin-right: 26px;
+    margin-top: 3px;
     background-size: 26px 26px;
 
     p {
       font-size: 17px;
+      letter-spacing: -0.5px;
+      font-weight: 600;
     }
   }
 }

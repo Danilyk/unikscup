@@ -22,21 +22,32 @@ header {
       }
     }
 
+    @media screen and (min-width: 1024px) {
+      .container-fluid {
+        padding: 0 1.8% 0 3rem;
+      }
+    }
+
     p {
-      font-size: 11px;
+      font-size: 13px;
+      line-height: 1.2;
 
       &.phone {
         font-size: 22px;
         font-weight: 600;
+        color: #2c2c2c;
+        margin-bottom: 3px;
       }
     }
 
     a.logo {
       display: block;
+      margin-top: 10px;
       text-indent: -9999px;
-      background: url('../img/logo2.png') center center no-repeat;
-      width: 226px;
-      height: 48px;
+      background: url('../img/logo2.png') 0 center no-repeat;
+      width: 400px;
+      height: 46px;
+      background-size: 55%;
     }
 
     .contacts {
@@ -45,10 +56,6 @@ header {
 
     @media only screen and (max-width: 500px) {
       & {
-        .contacts {
-          display: none;
-        }
-
         p.phone {
           font-size: 14px;
         }
@@ -66,14 +73,26 @@ header {
     }
   }
 
+  @media screen and (max-width: 900px) {
+    .contacts {
+      display: none;
+    }
+  }
+
   .header-bottom {
-    height: 60px;
+    height: 61px;
     position: relative;
     border-bottom: 1px solid #e9e9e9;
 
     .container-fluid,
     .row {
       height: 100%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      .container-fluid {
+        padding: 0 1.5% 0 2rem;
+      }
     }
 
     .nav-button {
@@ -158,7 +177,7 @@ header {
 
         a {
           display: block;
-          padding: 14px 34px;
+          padding: 19px 35px;
           transition: 0.2s;
           font-weight: 600;
           font-size: 16px;
@@ -172,11 +191,23 @@ header {
       }
     }
 
+    @media only screen and (max-width: 1440px) {
+      ul.nav li a {
+        font-size: 13px;
+      }
+    }
+
+    @media only screen and (max-width: 1220px) {
+      ul.nav li a {
+        padding: 19px 15px;
+      }
+    }
+
     @media only screen and (max-width: 1070px) {
       & {
         ul.nav li a {
           font-size: 11px;
-          padding: 18px 10px;
+          padding: 19px 10px;
         }
       }
     }

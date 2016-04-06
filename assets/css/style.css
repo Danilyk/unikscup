@@ -35,10 +35,16 @@
 
 
   --navtxtcolor: #acacae;
-  --headershadow: 0 3px 2px #b7b7b7;
+  --headershadow: 0 2px 2px #b7b7b7;
   --orderlistshadow:0 1px 3px #59595D;
   --maintxtcolor: #59595D;
   --pricecolor: #5DAAA4;
 
   --sans: 'Open Sans', sans-serif;
+  --sans-semibold: 'Open Sans Semibold', sans-serif;
+}
+
+@font-face {
+  font-family:'Open Sans Semibold';
+  src:url(../fonts/OpenSans-Semibold.ttf);
 }

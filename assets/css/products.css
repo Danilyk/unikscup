@@ -1,7 +1,7 @@
 .product-item {
   box-shadow: 0 1px 3px #59595D;
   background-color: var(--white);
-  max-width: 530px;
+  max-width: 600px;
   padding: 25px 30px;
   margin: 15px 0;
 
