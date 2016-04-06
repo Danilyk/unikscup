@@ -9,7 +9,7 @@ header {
   .header-top {
     box-shadow: var(--headershadow);
     align-items: center;
-    height: 70px;
+    height: 90px;
     z-index: 999;
     position: relative;
 
@@ -26,21 +26,21 @@ header {
       font-size: 11px;
 
       &.phone {
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 22px;
+        font-weight: 600;
       }
     }
 
     a.logo {
       display: block;
       text-indent: -9999px;
-      background: url('../img/logo.png') center center no-repeat;
-      width: 182px;
-      height: 36px;
+      background: url('../img/logo2.png') center center no-repeat;
+      width: 226px;
+      height: 48px;
     }
 
     .contacts {
-      margin-right: 10px;
+      margin-right: 26px;
     }
 
     @media only screen and (max-width: 500px) {
@@ -67,8 +67,9 @@ header {
   }
 
   .header-bottom {
-    height: 50px;
+    height: 60px;
     position: relative;
+    border-bottom: 1px solid #e9e9e9;
 
     .container-fluid,
     .row {
@@ -157,10 +158,10 @@ header {
 
         a {
           display: block;
-          padding: 14px 20px;
+          padding: 14px 34px;
           transition: 0.2s;
-          font-weight: bold;
-          font-size: 14px;
+          font-weight: 600;
+          font-size: 16px;
           z-index: 1;
 
           &:hover {
