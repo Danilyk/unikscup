@@ -61,40 +61,23 @@
     }
   }
 
-  .why-us1 {
-    background: url('../img/why-us1.png') center center no-repeat;
-    height: 215px;
-    width: 204px;
-  }
-
 .guarantees {
-  background: url('../img/guarantees.png') center center no-repeat;
-  height: 215px;
-  width: 205px
+  background: url('../img/guarantees2.png') center center no-repeat;
+  height: 256px;
+  width: 254px
 }
 
 .car1 {
-  background: url('../img/car1.png') center center no-repeat;
-  height: 215px;
-  width: 325px
+  background: url('../img/car2.png') center center no-repeat;
+  height: 256px;
+  width: 314px
 }
 
 .why-us1 {
-  background: url('../img/why-us1.png') center center no-repeat;
-  height: 216px;
-  width: 204px;
+  background: url('../img/why-us2.png') center center no-repeat;
+  height: 265px;
+  width: 252px;
 }
-
-.rubblefix {
-  position: relative;
-  left: -60px;
-  bottom: -136px;
-  p {
-    color: white;
-    font-size: 46px;
-  }
-}
-
 
 .landing-page-unique {
   background-color: var(--pricecolor);
@@ -114,9 +97,9 @@
   }
 
   .unique-cup {
-    background: url('../img/unique.png') center center no-repeat;
-    height: 445px;
-    width: 555px;
+    background: url('../img/uniq.png') center center no-repeat;
+    height: 550px;
+    width: 690px;
     background-size: contain;
   }
 
@@ -174,29 +157,10 @@
   }
 }
 
-.guarantees {
-  background: url('../img/guarantees.png') center center no-repeat;
-  height: 200px;
-  width: 205px
-}
-
-.car1 {
-  background: url('../img/car1.png') center center no-repeat;
-  height: 214px;
-  width: 325px
-}
-
-.unique-cup {
-  background: url('../img/unique.png') center center no-repeat;
-  height: 442px;
-  width: 555px
-}
-
-
 .brand-cup {
-  background: url('../img/brand-cups.png') center center no-repeat;
-  height: 465px;
-  width: 500px;
+  background: url('../img/brand-cups4.png') center center no-repeat;
+  height: 556px;
+  width: 608px;
   background-size: contain;
 }
 
@@ -217,21 +181,21 @@
 
 .delivery1 {
   background: url('../img/delivery1.png') center center no-repeat;
-  height: 200px;
-  width: 200px
+  height: 250px;
+  width: 255px;
 }
 
 
 .delivery2 {
   background: url('../img/delivery2.png') center center no-repeat;
-  height: 200px;
-  width: 200px
+  height: 250px;
+  width: 255px
 }
 
 .delivery3 {
   background: url('../img/delivery3.png') center center no-repeat;
-  height: 200px;
-  width: 200px
+  height: 250px;
+  width: 255px
 }
 
 
