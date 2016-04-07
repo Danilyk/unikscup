@@ -93,38 +93,38 @@
 
 .cup150 {
   background: url('../img/cup150.png') center center no-repeat;
-  height: 161px;
+  height: 151px;
   width: 162px;
 }
 
 .cup250 {
   background: url('../img/cup250.png') center center no-repeat;
-  height: 176px;
+  height: 172px;
   width: 162px;
 }
 
 .cup350 {
   background: url('../img/cup350.png') center center no-repeat;
-  height: 187px;
+  height: 204px;
   width: 162px;
 }
 
 .cup450 {
   background: url('../img/cup450.png') center center no-repeat;
-  height: 208px;
+  height: 232px;
   width: 162px;
 }
 
 .cup-cover80 {
   background: url('../img/cup-cover80.png') center center no-repeat;
-  height: 102px;
-  width: 162px;
+  height: 134px;
+  width: 204px;
 }
 
 .cup-cover90 {
   background: url('../img/cup-cover90.png') center center no-repeat;
-  height: 102px;
-  width: 162px;
+  height: 140px;
+  width: 204px;
 }
 
 .amount-info {
