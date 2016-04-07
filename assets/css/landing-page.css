@@ -157,6 +157,12 @@
   }
 }
 
+.cup-cover {
+  background: url('../img/cup-cover.png') center center no-repeat;
+  height: 100px;
+  width: 180px;
+}
+
 .brand-cup {
   background: url('../img/brand-cups4.png') center center no-repeat;
   height: 556px;
@@ -237,24 +243,24 @@
 
 .landingcup350{
   background: url('../img/landingcup350.png') center center no-repeat;
-  height: 140px;
+  height: 180px;
   width: 180px
 }
 
 .landingcup450{
   background: url('../img/landingcup450.png') center center no-repeat;
-  height: 140px;
+  height: 180px;
   width: 180px
 }
 
 .landing2layerscup350{
   background: url('../img/landing2layerscup350.png') center center no-repeat;
-  height: 140px;
+  height: 180px;
   width: 180px
 }
 
 .landing2layerscup450{
   background: url('../img/landing2layerscup450.png') center center no-repeat;
-  height: 140px;
+  height: 180px;
   width: 180px
 }
