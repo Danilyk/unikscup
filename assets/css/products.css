@@ -1,5 +1,5 @@
 .product-item {
-  box-shadow: 0 1px 3px #59595D;
+  box-shadow: 2px 2px 3px #C7CCD0;
   background-color: var(--white);
   max-width: 600px;
   padding: 25px 30px;
@@ -7,12 +7,14 @@
 
   .product-info {
     p {
-      font-size: 13px;
+      font-size: 14px;
       color: #a9aaaf;
       font-weight: 600;
     }
     h3 {
-      font-weight: 600;
+      font-weight: 400;
+      font-size: 28px;
+      color: #000;
     }
     h2 {
       color: var(--pricecolor);
@@ -33,6 +35,8 @@
   .price-for-one {
     border: 2px dotted #DEDEDE;
     margin: 15px 0;
+    border-radius: 4px;
+    max-width: 320px;
 
     p {
       font-size: 32pt;

@@ -66,11 +66,13 @@
   .why-us {
     margin-bottom: 65px;
     h2 {
-      font-weight: 600;
+      font-weight: 400;
+      font-size: 30px;
+      color: #000;
     }
     p {
-      max-width: 255px;
-      font-size: 14px;
+      max-width: 320px;
+      font-size: 16px;
       font-weight: 500;
       color: #828385;
     }
@@ -96,7 +98,7 @@
 
 .landing-page-unique {
   background-color: var(--pricecolor);
-  padding: 45px 110px 25px 140px;
+  padding: 45px 0 25px 140px;
 
   h2 {
     font-size: 60px;
@@ -134,10 +136,11 @@
     }
   }
 }
+
+
 .landing-page-brand-cups {
   margin-top: 35px;
-  padding:25px 0 15px 45px;
-  background-color: #1473E6;
+  padding:25px 0 15px 25px;
 
   h2 {
     margin-bottom: 40px;
@@ -145,7 +148,6 @@
     line-height: 1.2;
     font-weight: 900;
     color: #000;
-    margin-top: 0;
     &:last-of-type {
       color: #fff;
       margin-bottom: 0;
@@ -157,6 +159,7 @@
     font-size: 25px;
     font-weight: 300;
     color: #fff;;
+    max-width: 600px;
   }
 
   @media screen and (max-width: 1140px) {
@@ -194,7 +197,7 @@
   h2 {
     font-size: 30px;
     color: #333;
-    max-width: 300px;
+    max-width: 325px;
   }
   p {
     max-width: 300px;
@@ -255,7 +258,10 @@
   input {
     border-radius: 4px;
   }
-
+  .order-button.orange {
+    font-size: 19px;
+    padding: 20px 16px;
+  }
   @media screen and (max-width: 1140px) {
     & {
       padding: 10px 0;
