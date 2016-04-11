@@ -15,15 +15,22 @@
 
     h4 {
       font-weight: 400;
-      font-size: 22px;
+      font-size: 24px;
       margin-top: 0;
     }
 
     p {
-      font-size: 14px;
+      font-weight: 600;
+      font-size: 16px;
       color: var(--black);
     }
+
   }
+
+  h1 {
+    margin-top: 75px;
+  }
+
   .map-pin-pic {
     height: 40px;
     width: 40px;
@@ -59,7 +66,7 @@
     background-size: 40px 40px;
   }
 
-  img.map-pic {
+  .map-pic {
     background: url('../img/map-pic.png') center center no-repeat;
     width: 380px;
     height: 355px;
