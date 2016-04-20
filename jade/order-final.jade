@@ -2,93 +2,94 @@ extends ./layout.jade
 block content     
   .row.center-xs
     h1 Оформление заказа
-  .row.center-xs
-    h2 Готово
-    p Проверьте правильность введенных данных.После этого, нажмите на кнопку "подтвердить заказ" для того, чтобы отправить заказ в обработку.
-    br
-    br
-    br
-  
-  .row
-    .col-xs.no-grow
-      h3 Заказчик
-    ul.col-xs-offset-1.col-xs.order.no-padding
-      li
-        h3 ООО "Рога и копыта"
-        p Иванов Иван Иванович
-        p ivan.ivan@gmail.com
-        p 8 913 987 65 43
-  .row
-    .col-xs.no-grow
-      h3 Доставка
-    ul.col-xs-offset-1.col-xs.order.no-padding.no-border
-      li
-        h3 Курьерская служба СДЭК
-        p 630090 Новосибирск,ул.Николаева, 12, офис 520    
-  .row
-    .col-xs.no-grow   
-      h3 Ваш&nbsp;заказ
-    ul.order.col-xs.no-border
-      li.row
-        .col-xs.row.middle-xs.start-xs
-          span.icon-cup150
-          span.info
-            h4 Стакан 150мл, белый
-            p Изготовлен из ламинированного картона плотностью 270 г/м2
-        .col-xs.row.middle-xs
-          .col-xs              
-            .amount-block
-              p Количество
-              span.amount 1100
-          .col-xs    
-            .cost-block  
-              p Стоимость
-              span.cost 1320&nbsp;&#x20bd;        
-      li.row
-        .col-xs.row.middle-xs.start-xs
-          span.icon-cup150
-          span.info
-            h4 Стакан 150мл, белый
-            p Изготовлен из ламинированного картона плотностью 270 г/м2
-        .col-xs.row.middle-xs
-          .col-xs              
-            .amount-block
-              p Количество
-              span.amount 1100
-          .col-xs    
-            .cost-block  
-              p Стоимость
-              span.cost 1320&nbsp;&#x20bd;
-  .row
-    .col-xs.end-xs
-      ul.order.no-border
-        li: p.text-price Итого 1320&nbsp;&#x20bd;        
-  .row
-    .col-xs.no-grow
-      h3 Реквизиты
-    ul.col-xs.order.no-padding.no-border
-      li.row.middle-xs
-        .col-xs
+  .container  
+    .row.center-xs
+      h2 Готово
+      p Проверьте правильность введенных данных.После этого, нажмите на кнопку "подтвердить заказ" для того, чтобы отправить заказ в обработку.
+      br
+      br
+      br
+    
+    .row
+      .col-xs.row.middle-xs.no-grow
+        h3 Заказчик
+      ul.col-xs-offset-1.col-xs.order.no-padding
+        li
           h3 ООО "Рога и копыта"
-          p Фактический адрес:
-          p 630090, г. Новосибирск, 
-          p ул. Николаева, 12
-        .col-xs    
-          p ИНН 5407249745
-          p КПП 540701001
-          p ОГРН 1155476099888
+          p Иванов Иван Иванович
+          p ivan.ivan@gmail.com
+          p 8 913 987 65 43
+    .row
+      .col-xs.row.middle-xs.no-grow
+        h3 Доставка
+      ul.col-xs-offset-1.col-xs.order.no-padding.no-border
+        li
+          h3 Курьерская служба СДЭК
+          p 630090 Новосибирск,ул.Николаева, 12, офис 520    
+    .row
+      .col-xs.row.middle-xs.no-grow   
+        h3 Ваш&nbsp;заказ
+      ul.order.col-xs.no-border
+        li.row
+          .col-xs.row.middle-xs.start-xs
+            span.icon-cup150
+            span.info
+              h4 Стакан 150мл, белый
+              p Изготовлен из ламинированного картона плотностью 270 г/м2
+          .col-xs.row.middle-xs
+            .col-xs              
+              .amount-block
+                p Количество
+                span.amount 1100
+            .col-xs    
+              .cost-block  
+                p Стоимость
+                span.cost 1320&nbsp;&#x20bd;        
+        li.row
+          .col-xs.row.middle-xs.start-xs
+            span.icon-cup150
+            span.info
+              h4 Стакан 150мл, белый
+              p Изготовлен из ламинированного картона плотностью 270 г/м2
+          .col-xs.row.middle-xs
+            .col-xs              
+              .amount-block
+                p Количество
+                span.amount 1100
+            .col-xs    
+              .cost-block  
+                p Стоимость
+                span.cost 1320&nbsp;&#x20bd;
+    .row
+      .col-xs.end-xs
+        ul.order.no-border
+          li: p.text-price Итого 1320&nbsp;&#x20bd;        
+    .row
+      .col-xs.row.middle-xs.no-grow
+        h3 Реквизиты
+      ul.col-xs.order.no-padding.no-border
+        li.row.middle-xs
+          .col-xs
+            h3 ООО "Рога и копыта"
+            p Фактический адрес:
+            p 630090, г. Новосибирск, 
+            p ул. Николаева, 12
+          .col-xs    
+            p ИНН 5407249745
+            p КПП 540701001
+            p ОГРН 1155476099888
+          .col-xs
+            p БИК 045004777
+            p Рассчетный счет 40702810606000001925
+            p Корреспондентский счет 40702810606000001925
+            p Наименование банка АКБ Российский Капитал (ПАО) филиал Новосибирский г. Новосибирск
+          
+        
+    .col-xs-offset-2.form-control 
+      p Примечания к заказу
+      textarea(type="text" placeholder="Сообщите нам информацию, которую вы считаете важной, не вошедшую в предыдущие шаги")
+      .row.middle-xs      
         .col-xs
-          p БИК 045004777
-          p Рассчетный счет 40702810606000001925
-          p Корреспондентский счет 40702810606000001925
-          p Наименование банка АКБ Российский Капитал (ПАО) филиал Новосибирский г. Новосибирск
-        
-        
-  .col-xs-offset-1.form-control 
-    p Примечания к заказу
-    textarea(type="text" placeholder="Сообщите нам информацию, которую вы считаете важной, не вошедшую в предыдущие шаги")
-  .row.middle-xs      
-    .col-xs
-      a.grey-button(href="#") Назад
-    .col-xs.end-xs
-      a.orange.order-button(href="#") Подтвердить заказ
+          a.grey-button.back(href="#") Назад
+        .col-xs.start-xs
+          a.orange.order-button(href="#") Подтвердить заказ
