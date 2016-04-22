@@ -56,8 +56,8 @@
     padding: 0 10% 170px 10%;
 
     h3 {
-      font-size: 22px;
-      font-weight: 400;
+      font-size: 28px;
+      font-weight: 300;
 
       @media (width <= 840px) {
         font-size: 16px;
@@ -66,8 +66,8 @@
     }
 
     h2{
-      font-weight: 400;
-      font-size: 26px;
+      font-weight: 300;
+      font-size: 32px;
 
       @media (width <= 840px) {
         font-size: 18px;
@@ -77,8 +77,9 @@
 
     p {
       color: #828385;
-      font-size: 16px;
+      font-size: 17px;
       margin: 10px 0;
+      font-weight: 400;
 
       @media (width <= 840px) {
         font-size: 12px;
@@ -88,6 +89,9 @@
 
     h4 {
       margin: 0 auto;
+      color: black;
+      font-size: 19px;
+      font-weight: 600;
     }
 
     ul p {
@@ -97,38 +101,49 @@
 
   ul.story {
     list-style-type: none;
+    padding-left: 80px;
+    margin-top: -25px;
   }
 
   .list-item-1::before {
     position: relative;
     content: '1';
-    border: 1px solid #828385;
+    border: 1px solid #c0c0c0;
+    color: #c0c0c0;
+    font-size: 30px;
+    font-weight: 100;
     border-radius: 30px;
-    padding: 7px 14px;
-    left: -50px;
-    top: 22px;
+    padding: 3px 15px;
+    left: -60px;
+    top: 32px;
 
   }
 
   .list-item-2::before {
     position: relative;
     content: '2';
-    border: 1px solid #828385;
+    border: 1px solid #c0c0c0;
+    color: #c0c0c0;
+    font-size: 30px;
+    font-weight: 100;
     border-radius: 30px;
-    padding: 7px 14px;
-    left: -50px;
-    top: 22px;
+    padding: 3px 15px;
+    left: -60px;
+    top: 32px;
 
   }
 
   .list-item-3::before {
     position: relative;
     content: '3';
-    border: 1px solid #828385;
+    border: 1px solid #c0c0c0;
+    color: #c0c0c0;
+    font-size: 30px;
+    font-weight: 100;
     border-radius: 30px;
-    padding: 7px 14px;
-    left: -50px;
-    top: 22px;
+    padding: 3px 15px;
+    left: -60px;
+    top: 32px;
 
   }
 }

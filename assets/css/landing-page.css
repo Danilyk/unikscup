@@ -235,7 +235,7 @@
   padding-left: 91px;
 
   .col-xs.no-grow {
-    min-width: 400px;
+    min-width: 300px;
   }
 
   input {

@@ -2,13 +2,14 @@
   box-shadow: var(--orderlistshadow);
   margin-top: 45px;
   margin: 45px auto 70px auto;
-  padding: 0 25px 25px;
-  max-width: 700px;
+  padding: 0 65px 25px;
+  max-width: 900px;
   min-width: 235px;
   background-color: var(--white);
+  box-sizing: border-box;
 
   h3{
-    margin: 35px 0 12px 0;
+    font-weight: 600;
   }
 }
 
@@ -17,16 +18,17 @@
   border-top: 1px solid var(--borderordercolor);
   border-bottom: 1px solid var(--borderordercolor);
   margin-top: 0;
+  margin-bottom: 0;
   box-sizing: border-box;
   padding: 0;
 
-  li.row .col-xs:first-child{
-    min-width: 220px;
-  }
+  /*li.row .col-xs {
+    min-width: 240px;
+  }*/
 
   .info {
     margin-left: 15px;
-    max-width: 165px;
+    max-width: 195px;
 
     p {
       font-size: 10px;
@@ -35,12 +37,14 @@
 
   .amount-block,
   .cost-block {
-    margin: 0 0 5px;
+    margin: 0 15px 5px;
     p {
-      font-size: 9px;
+      font-size: 11px;
+      font-weight: 700;
       margin: 0 0 5px 0;
       padding: 0 0 5px 5px;
       margin-right: 10px;
+      color: #828385;
     }
   }
 
@@ -49,6 +53,7 @@
     border: var(--border) #C7CCD0;
     border-radius: 18px;
     font-size: 16px;
+    color: black;
     font-weight: bold;
     position: relative;
 
@@ -122,7 +127,7 @@
 
   li {
     border-bottom: 1px solid var(--borderordercolor);
-    padding: 5px 45px 10px 5px;
+    padding: 14px 45px 14px 5px;
     position: relative;
     margin-left: 60px;
 
@@ -138,13 +143,6 @@
       flex-grow: 0;
       padding: 3px;
     }
-
-    .cross-block {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      margin-top: -17px;
-    }
   }
 
   &.no-padding {
@@ -159,7 +157,7 @@
   }
 
   h4 {
-    font-size: 12px;
+    font-size: 14px;
     display: inline-block;
     color: #333;
     margin-bottom: 5px;
